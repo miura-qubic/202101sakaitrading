@@ -1008,6 +1008,16 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.special_contents01::after{
+	background: url(../images/special_contents/mv.png) center center / 1920px auto no-repeat;
+}
+.special_contents01 h1{
+	display: block;
+	width: 844.08px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .special_contents02{
 	padding: 5rem 0;
@@ -1127,16 +1137,6 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.special_contents01::after{
-	background: url(../images/special_contents/mv.png) center center / 1920px auto no-repeat;
-}
-.special_contents01 h1{
-	display: block;
-	width: 844.08px;
-}
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ jobinfo01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .jobinfo01::after{
 	background: url(../images/jobinfo/mv.png) center center / 1920px auto no-repeat;
@@ -1153,6 +1153,7 @@ footer .copyright{
 }
 .jobinfo02 .copy p{
 	color: #111;
+	font-weight: 500;
 	line-height: 3.125rem;
 }
 .jobinfo02 h2{
@@ -1233,6 +1234,9 @@ footer .copyright{
 }
 .jobinfo02 .box02 td{
 	width: 83%;
+}
+.jobinfo02 .box02 td span{
+	display: block;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ jobinfo02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 

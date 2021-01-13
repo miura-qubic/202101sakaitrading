@@ -275,7 +275,7 @@ header{
 	justify-content: space-between;
 	width: 100%;
 	height: 76px;
-	background: rgba(255,255,255,.6);
+	background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.73) 55%, rgba(255,255,255,.71) 78%, rgba(255,255,255,.61) 83%, rgba(255,255,255,0) 100%);
 	padding: 0 1.25rem;
 	z-index: 50000;
 }
@@ -925,20 +925,158 @@ footer .copyright{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 募集要項 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.lower_mv{ z-index: 2; }
+.lower_mv::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, #03A8E5, #012869);
+	z-index: -1;
+}
+.lower_mv::after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.lower_mv_in{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 32vh;
+	min-height: 269px;
+	z-index: 2;
+}
+.lower_mv .lower_ttl{
+	width: 100%;
+	color: #fff;
+	transform: translateY(2.25rem);
+}
+.lower_mv .lower_ttl .txt01{
+	display: inline-block;
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	margin-bottom: 0.75rem;
+}
+.lower_mv .txt_anime .anime01::before,
+.lower_mv .txt_anime .anime02::before,
+.lower_mv .txt_anime .anime03::before{
+	background: #fff;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ jobinfo01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.jobinfo01::after{
+	background: url(../images/jobinfo/mv_sp.png) center center / cover no-repeat;
+}
+.jobinfo01 h1{
+	display: block;
+	width: 156px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ jobinfo01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-
-
-
-
-
-
-
-
-
-
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ jobinfo02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.jobinfo02{
+	padding: 3rem 0 4.5rem;
+}
+.jobinfo02 .copy p{
+	color: #111;
+	font-size: 0.93rem;
+	font-weight: 500;
+	line-height: 2.428;
+}
+.jobinfo02 h2{
+	display: inline-block;
+	font-size: 1.33rem;
+	font-weight: 600;
+	position: relative;
+	padding: 0.5rem 1rem 0.5rem 2rem;
+	background: url(../images/jobinfo/jpbinfo02_fig02.svg) left bottom / auto 1.5rem no-repeat;
+}
+.jobinfo02 .box01{
+	margin-top: 2.5rem;
+}
+.jobinfo02 .box01 .item{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	max-width: 300px;
+	width: 100%;
+	margin: -1.5rem auto 0;
+}
+.jobinfo02 .box01 .item .inner{
+	position: relative;
+	width: 18rem;
+}
+.jobinfo02 .box01 .item .inner:nth-of-type(odd){
+	margin: -9.5rem auto 0 -15%;
+}
+.jobinfo02 .box01 .item .inner:nth-of-type(even){
+	margin: -9.5rem -15% 0 auto;
+}
+.jobinfo02 .box01 .item .inner:first-of-type{
+	margin-top: 0;
+}
+.jobinfo02 .box01 .item .inner .img img{
+	width: 100%;
+	height: auto;
+}
+.jobinfo02 .box01 .item .inner p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+}
+.jobinfo02 .box01 .copy{
+	margin-top: -1rem;
+}
+.jobinfo02 .box02{
+	margin-top: 4.5rem;
+}
+.jobinfo02 .box02 table{
+	width: 100%;
+	margin-top: 2rem;
+}
+.jobinfo02 .box02 tr{
+	display: block;
+	margin-bottom: 1.75rem;
+}
+.jobinfo02 .box02 th,
+.jobinfo02 .box02 td{
+	display: block;
+	font-size: 0.93rem;
+	text-align: left;
+}
+.jobinfo02 .box02 th{
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 0.25rem;
+}
+.jobinfo02 .box02 td{
+	line-height: 1.785;
+}
+.jobinfo02 .box02 td .indent2{
+	display: block;
+	padding-left: 3em;
+	text-indent: -3em;
+}
+.jobinfo02 .box02 td span + span{
+	margin-top: 1rem;
+}
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{
