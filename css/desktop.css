@@ -954,16 +954,6 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .lower_mv{ z-index: 2; }
-.lower_mv::before{
-	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(90deg, #03A8E5, #012869);
-	z-index: -1;
-}
 .lower_mv::after{
 	position: absolute;
 	content: '';
@@ -1020,7 +1010,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .special_contents02{
-	padding: 5rem 0;
+	padding: 6rem 0 12rem;
 	text-align: center;
 }
 .special_contents02 .copy p{
@@ -1030,32 +1020,29 @@ footer .copyright{
 .special_contents02 .box{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	margin-top: 5rem;
 }
-.special_contents02 .box article{
-	width: 32%;
+.special_contents02 article{
+	width: 30%;
 }
-.special_contents02 .box article .bg{
+.special_contents02 article a{
 	position: relative;
-	overflow: hidden;
 }
-.special_contents02 .box article .bg img{
-
+.special_contents02 article .bg{
+	position: relative;
 }
-.special_contents02 .box article .bg img.photo{
-	transition: .3s;
-	transform-origin: 100% 75%;
-	transform: translateX() scale(1.1);
-}
-.special_contents02 .box article .bg img.waku{
+.special_contents02 article .bg::before{
 	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
+	content: '';
+	top: -6rem;
+	left: -5.3rem;
+	width: 150%;
+	height: 150%;
+	background: url(../images/special_contents/hexagon_shadow.png) center center / contain no-repeat;
+	z-index: -1;
 }
-.special_contents02 .box article a:hover .bg img.photo{
-	transform: scale(1);
-}
-.special_contents02 .box article .bg::after{
+.special_contents02 article .bg::after{
 	position: absolute;
 	content: '';
 	top: 0;
@@ -1063,77 +1050,70 @@ footer .copyright{
 	width: 100%;
 	height: 100%;
 	background: url(../images/special_contents/hexagon.png) center center / contain no-repeat;
-	transition: .3s;
+	transition: .3s ease-out;
+	z-index: 3;
 }
-.special_contents02 .box article a:hover .bg::after{
+.special_contents02 article a:hover .bg::after{
 	opacity: .65;
 }
-
-.special_contents02 .box02{
-	display: flex;
-	justify-content: space-between;
-}
-.special_contents02 .box02 article{
-	width: 384.46px;
-}
-.special_contents02 .box02 article a .bg{
+.special_contents02 article .bg .img{
 	position: relative;
-	width: 384.46px;
-	height: 338.64px;
-	transform: rotate(90deg);
-	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-	overflow: hidden;
+	z-index: 2;
 }
-#shadow {
-  position: absolute;
-  z-index: 3;
-  content: "";
-	background: rgba(0, 0, 0, .39);
-	filter: blur(60px);
-	width: 384.46px;
-	height: 338.64px;
-  left: 5px;
-  top: -10px;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-}
-.special_contents02 .box02 article a .bg::after{
+.special_contents02 article .txt{
 	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(-90deg, #03A8E5, #003A9A);
-	transition: .3s ease-out;
+	color: #fff;
+	z-index: 5;
 }
-.special_contents02 .box02 article a:hover .bg::after{
-	opacity: .65;
+.special_contents02 article .txt .txt_in{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 }
-.special_contents02 .box02 article a .bg .bg_in{
-	transform: rotate(-90deg);
+.special_contents02 article .txt .txt_in::after{
+	position: absolute;
+	content: '';
+	bottom: 2.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 1.2rem 1.8rem 0 1.8rem;
+	border-color: #fff transparent transparent transparent;
 }
-.special_contents02 .box02 article a .bg .bg_in img{
-	transition: .3s ease-out;
+.special_contents02 article .txt .num{
+	position: relative;
+	display: inline-block;
+	padding: 0 1.5rem 1.5rem;
+	margin: 3.5rem 0 1rem;
 }
-.special_contents02 .box02 article:nth-of-type(1) a .bg .bg_in img{
-	transform: translateX(1.7rem) scale(2);
+.special_contents02 article .txt .num::after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 4px;
+	background: #fff;
 }
-.special_contents02 .box02 article:nth-of-type(1) a:hover .bg .bg_in img{
-	transform: translateX(-1rem) scale(1.5);
-}
-
-.special_contents02 .box02 article:nth-of-type(2) a .bg .bg_in img{
-	transform: translateY(-1.8rem) translateX(8.1rem) rotate(180deg) scale(1.03);
-}
-.special_contents02 .box02 article:nth-of-type(2) a:hover .bg .bg_in img{
-	transform: translateY(-0.5rem) translateX(6.8rem) rotate(180deg) scale(0.97);
-}
-
-.special_contents02 .box02 article:nth-of-type(3) a .bg .bg_in img{
-	transform: translateY(-1.65rem) translateX(2.6rem) scale(1.8);
-}
-.special_contents02 .box02 article:nth-of-type(3) a:hover .bg .bg_in img{
-	transform: translateY(-0.1rem) translateX(-0.9rem) scale(1.5);
+.special_contents02 article .txt h2{
+	font-size: 1.875rem;
+	letter-spacing: 0.2rem;
+	line-height: 1.766;
+	height: 8rem;
+	display: flex;
+	align-items: center;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1149,7 +1129,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ jobinfo02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .jobinfo02{
-	padding: 5rem 0 6rem;
+	padding: 6rem 0;
 }
 .jobinfo02 .copy p{
 	color: #111;

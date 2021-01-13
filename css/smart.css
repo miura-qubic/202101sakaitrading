@@ -926,16 +926,6 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .lower_mv{ z-index: 2; }
-.lower_mv::before{
-	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(90deg, #03A8E5, #012869);
-	z-index: -1;
-}
 .lower_mv::after{
 	position: absolute;
 	content: '';
@@ -973,6 +963,16 @@ footer .copyright{
 	background: #fff;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.special_contents01::after{
+	background: url(../images/special_contents/mv_sp.png) center center / cover no-repeat;
+}
+.special_contents01 h1{
+	display: block;
+	width:  325px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ jobinfo01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .jobinfo01::after{
