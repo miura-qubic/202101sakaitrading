@@ -255,7 +255,7 @@ section,
 .bg_frame::before{
 	position: fixed;
 	content: '';
-	background: url(../images/common/main_bg_sp.png) center bottom / 600px auto no-repeat;
+	background: url(../images/common/main_bg_sp.png) center bottom / 100% auto no-repeat;
 	width: 100%;
 	height: 100%;
 	top: 50%;
@@ -479,6 +479,7 @@ footer .copyright{
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top01{
 	background: url(../images/top/mv_bg.png) center -5rem / 850px auto no-repeat;
+	background-color: #fff;
 	padding: 10rem 0 8rem;
 }
 .top01 .mv{
@@ -957,6 +958,13 @@ footer .copyright{
 	letter-spacing: 0.2rem;
 	margin-bottom: 0.75rem;
 }
+.lower_mv .lower_ttl .txt02{
+	display: inline-block;
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	margin-top: 2rem;
+}
 .lower_mv .txt_anime .anime01::before,
 .lower_mv .txt_anime .anime02::before,
 .lower_mv .txt_anime .anime03::before{
@@ -970,9 +978,140 @@ footer .copyright{
 }
 .special_contents01 h1{
 	display: block;
-	width:  325px;
+	width: 325px;
+}
+.special_contents01 .lower_ttl .txt01,
+.special_contents01 .lower_ttl .txt02{
+	font-weight: 600;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.special_contents02{
+	padding: 3rem 0 7rem;
+	text-align: center;
+}
+.special_contents02 .copy{
+	min-width: 240px;
+	width: 70%;
+	margin: 0 auto;
+}
+.special_contents02 .copy p{
+	color: #111;
+	font-size: 0.93rem;
+	font-weight: 500;
+	line-height: 2.428;
+	text-align: left;
+}
+.special_contents02 .box{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 3.5rem auto 0;
+	max-width: 300px;
+	width: 100%;
+}
+.special_contents02 article{
+	width: 14rem;
+}
+.special_contents02 article:nth-of-type(odd){
+	margin-right: auto;
+}
+.special_contents02 article:nth-of-type(even){
+	margin-left: auto;
+}
+.special_contents02 article a{
+	position: relative;
+}
+.special_contents02 article .bg{
+	position: relative;
+}
+.special_contents02 article .bg::before{
+	position: absolute;
+	content: '';
+	top: -4.2rem;
+	left: -3.6rem;
+	width: 150%;
+	height: 150%;
+	background: url(../images/special_contents/hexagon_shadow.png) center center / contain no-repeat;
+	z-index: -1;
+}
+.special_contents02 article .bg::after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/special_contents/hexagon.png) center center / contain no-repeat;
+	z-index: 3;
+}
+.special_contents02 article .bg .img{
+	position: relative;
+	z-index: 2;
+}
+.special_contents02 article .txt{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	z-index: 5;
+}
+.special_contents02 article .txt .txt_in{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.special_contents02 article .txt .txt_in::after{
+	position: absolute;
+	content: '';
+	bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 1.1rem 1.7rem 0 1.7rem;
+	border-color: #fff transparent transparent transparent;
+}
+.special_contents02 article .txt .num{
+	position: relative;
+	display: inline-block;
+	padding: 0 1rem 1rem;
+	margin: 2.5rem 0 0.5rem;
+}
+.special_contents02 article .txt .num::after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 2px;
+	background: #fff;
+}
+.special_contents02 article .txt .num img{
+	width: auto;
+	height: 1.75rem;
+}
+.special_contents02 article .txt h2{
+	font-size: 1.53rem;
+	letter-spacing: 0.2rem;
+	line-height: 1.6;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ jobinfo01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .jobinfo01::after{
@@ -1077,6 +1216,7 @@ footer .copyright{
 .jobinfo02 .box02 td span + span{
 	margin-top: 1rem;
 }
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ jobinfo02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{
