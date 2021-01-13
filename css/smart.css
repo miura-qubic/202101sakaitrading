@@ -1,0 +1,984 @@
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ベース設定 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+/* @font-face {
+	font-family: "myfont";
+	src: url(../fonts/.woff) format("woff"),
+				url(../fonts/.otf) format("otf");
+} */
+body{-webkit-text-size-adjust: 100%;}
+body.active{ overflow: hidden; }
+html{
+	color: #000;
+	font-size: 15px;
+	line-height: 2;
+	font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, '游ゴシック', 'Yu Gothic', '游ゴシック体', 'YuGothic', 'ＭＳ Ｐゴシック', sans-serif;
+	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
+	/*font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
+	/*font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
+	/*font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;*/
+	-webkit-text-size-adjust: 100%;
+}
+a{
+	color: #000;
+	display: block;
+}
+#wrapper{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+section,
+.section{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.l_container{
+	width: 100%;
+	padding:0 1rem;
+}
+.container{
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto;
+	padding:0 2rem;
+}
+.m_container{
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto;
+	padding:0 2rem;
+}
+.s_container{
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto;
+	padding:0 2rem;
+}
+.is_pc{display: none;}
+.is_hidden_tab{display: none;}
+:root{
+	--insta_blue:#4C64D3;
+	--insta_red:#CF2E92;
+	--insta_orange:#F26939;
+	--insta_yellow:#FFDD83;
+	--facebook: #3C5A99;
+	--twitter: #1DA1F2;
+	--line: #00B900;
+	--youtube: #DA1725;
+	--blue: #0052AA;
+	--lightblue: #0390CE;
+}
+.objectCover {
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%; 
+	font-family: 'object-fit: cover;object-position: 50% 50%;'
+}
+.objectContain {
+	width:100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: 50% 50%; 
+	font-family: 'object-fit: contain;object-position: 50% 50%;'
+}
+.point_reader{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.inertia{ -webkit-overflow-scrolling: touch; }
+.preload * { transition: none !important; }
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.ttl_wrap,
+.ttl_wrap02{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.ttl_wrap .en,
+.ttl_wrap02 .en{
+	line-height: 0;
+	display: inline-block;
+}
+.ttl_wrap p,
+.ttl_wrap02 p{
+	display: inline-block;
+	font-size: 1.33rem;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	color: var(--blue);
+}
+.ttl_wrap.white p,
+.ttl_wrap02.white p{
+	color: #fff;
+}
+.ttl_wrap .en{
+	margin-bottom: 1.5rem;
+}
+.ttl_wrap02 .en{
+	margin-top: 0.75rem;
+}
+.ttl_wrap .en img,
+.ttl_wrap02 .en img{
+	height: 3rem;
+}
+
+.btn{
+	position: relative;
+	text-align: center;
+	z-index: 9;
+}
+.btn a{
+	position: relative;
+	font-size: 0.93rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	color: var(--blue);
+	background: #fff;
+	width: 14.3rem;
+	padding: 0.5rem;
+	box-shadow: 0 0 20px rgba(0,25,52,.4);
+	transition: .3s ease-in;
+}
+.btn.lightblue a{
+	color: #fff;
+	background: var(--lightblue);
+}
+.btn.grd a{
+	font-weight: 500;
+	color: #fff;
+	background: linear-gradient(90deg, #03A8E5, #012869);
+}
+.btn.small a{
+	width: 11.3rem;
+}
+.btn a::after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 100%;
+	width: 76.6px;
+	height: 1px;
+	background: var(--blue);
+	transform: translateY(-50%) translateX(-38.3px);
+	transition: .3s ease-in .1s;
+}
+.btn.btn.lightblue a::after,
+.btn.grd a::after{
+	background: #fff;
+}
+.btn.small a::after{
+	width: 60px;
+	transform: translateY(-50%) translateX(-30px);
+}
+.btn a span{
+	position: relative;
+	z-index: 2;
+}
+.btn.grd a span{
+	margin-left: -2rem;
+}
+
+.grd01{ background: linear-gradient(90deg, #03A8E5, #012869); }
+
+.txt_anime .anime01,
+.txt_anime .anime02,
+.txt_anime .anime03{
+	position: relative;
+	overflow: hidden;
+	line-height: 1;
+}
+.txt_anime .anime01::before,
+.txt_anime .anime02::before,
+.txt_anime .anime03::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: #1a509a;
+	transition: transform 1.3s cubic-bezier(.27,.98,.74,.02);
+	transform: translateX(-101%);
+	z-index: 2;
+}
+.txt_anime.white .anime01::before,
+.txt_anime.white .anime02::before,
+.txt_anime.white .anime03::before{
+	background: #fff;
+}
+.txt_anime .anime02::before{
+	transition-delay: .3s;
+}
+.txt_anime .anime03::before{
+	transition-delay: .6s;
+}
+.txt_anime.start .anime01::before,
+.txt_anime.start .anime02::before,
+.txt_anime.start .anime03::before{
+	transform: translateX(101%);
+}
+.txt_anime img,
+.txt_anime span{
+	position: relative;
+	opacity: 0;
+	transition: opacity 0s .6s;
+	z-index: 1;
+}
+.txt_anime span{
+	transition-delay: 1.3s;
+}
+.txt_anime.start img,
+.txt_anime.start span{
+	opacity: 1;
+}
+
+.fadein{
+	opacity: 0;
+	transform: translateY(30px);
+}
+.fadein.active{
+	opacity: 1;
+	transform: translateY(0);
+}
+.fadein01{ transition: .8s; }
+.fadein02{ transition: .8s .2s; }
+.fadein03{ transition: .8s .4s; }
+
+.bg_frame::before{
+	position: fixed;
+	content: '';
+	background: url(../images/common/main_bg_sp.png) center bottom / 600px auto no-repeat;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 76px;
+	background: rgba(255,255,255,.6);
+	padding: 0 1.25rem;
+	z-index: 50000;
+}
+header .logo{
+	line-height: 1;
+}
+header .logo a{
+	display: flex;
+	align-items: center;
+}
+header .logo img{
+	width: 125px;
+}
+header .logo p{
+	font-size: 0.66rem;
+	font-weight: 500;
+	line-height: 1;
+	margin-left: 0.5rem;
+	letter-spacing: 0.075rem;
+}
+
+header nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background: rgba(255,255,255,.5);
+	backdrop-filter: blur(12px);
+	overflow-y: auto;
+}
+header nav ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+header nav ul li{
+	position: relative;
+}
+header nav ul li + li{
+	margin-top: 2rem;
+}
+header nav ul li a{
+	position: relative;
+	font-size: 0.93rem;
+	letter-spacing: 0.15rem;
+	text-align: center;
+	width: 142.2px;
+	padding: 0.75rem 1rem 0.75rem 2rem;
+	background: url(../images/common/nav_icon02.svg) left bottom / auto 1.5rem no-repeat;
+}
+header nav ul li:first-of-type::before{
+	position: absolute;
+	content: '';
+	bottom: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url(../images/common/nav_icon01.png) center center / contain no-repeat;
+	width: 4rem;
+	height: 3.5rem;
+}
+
+.menu_open{
+	width: 3rem;
+	height: 3.67rem;
+	position: relative;
+	background: url(../images/common/menu.png) center center / contain no-repeat;
+}
+.menu_open span{
+	position: absolute;
+	top:50%;
+	left:50%;
+	background: #012869;
+	width: 35%;
+	height: 1px;
+}
+.menu_open span:nth-of-type(1){
+	transform:translate(-50%,-50%) translateY(5px);
+}
+.menu_open span:nth-of-type(2){
+	transform:translate(-50%,-50%) translateY(-5px);
+}
+.menu_open.active span:nth-of-type(1){
+	animation: menuAnime01 .4s forwards;
+}
+.menu_open.active span:nth-of-type(2){
+	animation: menuAnime02 .4s forwards;
+}
+.menu_open.close span:nth-of-type(1){
+	animation: menuAnime01_close .4s forwards;
+}
+.menu_open.close span:nth-of-type(2){
+	animation: menuAnime02_close .4s forwards;
+}
+@keyframes menuAnime01{
+	50%{ transform:translate(-50%,-50%); }
+	100%{ transform:translate(-50%,-50%) rotate(45deg); }
+}
+@keyframes menuAnime01_close{
+	0%{ transform:translate(-50%,-50%) rotate(45deg); }
+	50%{ transform:translate(-50%,-50%); }
+	100%{ transform:translate(-50%,-50%) translateY(5px); }
+}
+@keyframes menuAnime02{
+	50%{ transform:translate(-50%,-50%); }
+	100%{ transform:translate(-50%,-50%) rotate(-45deg); }
+}
+@keyframes menuAnime02_close{
+	0%{ transform:translate(-50%,-50%) rotate(-45deg); }
+	50%{ transform:translate(-50%,-50%); }
+	100%{ transform:translate(-50%,-50%) translateY(-5px); }
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+footer{
+	padding: 3rem 0 2rem;
+	text-align: center;
+}
+footer .box{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+footer .logo{
+	width: 15rem;
+	margin: 3rem auto 0;
+	order: 2;
+}
+footer ul{
+	order: 1;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	text-align: left;
+}
+footer ul li{
+	width: 48%;
+	padding: 1rem 0;
+}
+footer ul li:nth-of-type(1){ order: 1; }
+footer ul li:nth-of-type(2){ order: 3; }
+footer ul li:nth-of-type(3){ order: 5; }
+footer ul li:nth-of-type(4){ order: 7; }
+footer ul li:nth-of-type(5){ order: 2; }
+footer ul li:nth-of-type(6){ order: 4; }
+footer ul li:nth-of-type(7){ order: 6; }
+footer ul li a{
+	position: relative;
+	color: #111;
+	font-size: 0.93rem;
+	padding-left: 1rem;
+}
+footer ul li a::before{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+	width: 0.75rem;
+	height: 1px;
+	transform: translateY(-50%);
+	background: #707070;
+}
+footer .site_link{
+	order: 3;
+	margin-top: 0.75rem;
+}
+footer .site_link a{
+	display: inline-block;
+	color: #111;
+	font-size: 0.93rem;
+}
+footer .site_link a span{
+	position: relative;
+	transition: .3s;
+}
+footer .site_link a span::after{
+	position: absolute;
+	content: '';
+	background: url(../images/common/link_icon.svg) center center / contain no-repeat;
+	top: 0.25rem;
+	left: 100%;
+	width: 11px;
+	height: 9.3px;
+	margin-left: 0.25rem;
+}
+footer .copyright{
+	order: 4;
+	font-size: 0.6rem;
+	color: #111;
+	margin-top: 1.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top01{
+	background: url(../images/top/mv_bg.png) center -5rem / 850px auto no-repeat;
+	padding: 10rem 0 8rem;
+}
+.top01 .mv{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	min-height: 720px;
+	padding: 0 2rem;
+}
+.top01 .txt p{
+	font-size: 1.26rem;
+	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+	letter-spacing: 0.1rem;
+	margin-top: 1.5rem;
+	display: inline-block;
+}
+.top01 .scroll{
+	position: relative;
+	margin: 3.5rem 0 0.7rem;
+	padding: 0 0 2rem;
+	text-align: center;
+}
+.top01 .scroll img{
+	width: 0.67rem;
+	transform: rotate(-90deg);
+}
+.top01 .scroll .bdr{
+	overflow: hidden;
+	position: absolute;
+	top: auto;
+	left: 50%;
+	display: block;
+	width: 1px;
+	height: 25px;
+}
+.top01 .scroll .bdr span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: #012869;
+	opacity: 0.8;
+	transform: translateY(-100%);
+	animation: scrollBdr 3.5s normal infinite ease none;
+}
+@keyframes scrollBdr{
+	25%{ transform: translateY(0); }
+	50%{ transform: translateY(0); }
+	75%{ transform: translateY(100%); }
+	100%{ transform: translateY(100%); }
+}
+.top01 .img01{
+	position: absolute;
+	top: auto;
+	left: 50%;
+	transform: translateX(-50%) translateY(-3.6rem) translateX(-1rem);
+	width: 1180px;
+}
+.top01 .txt02{
+	position: relative;
+	z-index: 2;
+}
+.top01 .txt02 h3{
+	font-size: 1.67rem;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	color: #111;
+	margin-bottom: 3rem;
+}
+.top01 .txt02 p{
+	font-size: 0.93rem;
+	font-weight: 500;
+	line-height: 2.428;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top02 .bg{
+	position: relative;
+	width: 100%;
+	height: 420px;
+	background: linear-gradient(90deg, #03A8E5, #003A9A);
+}
+.top02 .bg::after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/top/top02_bg_sp.png) center bottom / cover no-repeat;
+	opacity: .6;
+}
+.top02 .txt{
+	position: absolute;
+	top: 3rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	padding: 0 2rem;
+}
+.top02 .txt .txt01{
+	font-size: 1.33rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	margin-bottom: 0.25rem;
+	display: inline-block;
+}
+.top02 .txt h3{
+	max-width: 650px;
+	width: 100%;
+	margin: 0.5rem 0 1rem;
+}
+.top02 .txt h3 img{
+	width: 100%;
+}
+.top02 .txt .txt02{
+	display: inline-block;
+	font-size: 1.53rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	margin-top: 0.5rem;
+}
+.top02 .txt_anime .anime01::before,
+.top02 .txt_anime .anime02::before,
+.top02 .txt_anime .anime03::before{
+	background: #fff;
+}
+.top02 .txt .btn{
+	margin-top: 1.5rem;
+}
+.top02 .txt .btn a{
+	margin: 0 auto;
+}
+.top02 .img01,
+.top02 .img02,
+.top02 .img03{
+	position: absolute;
+}
+.top02 .img01{
+	width: 9.6rem;
+	bottom: 2rem;
+	left: 0.5rem;
+}
+.top02 .img02{
+	width: 9.93rem;
+	bottom: -3rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.top02 .img03{
+	width: 10.73rem;
+	bottom: 2rem;
+	right: 0.5rem;
+}
+
+.updown_anime01{
+	animation: updown 3s ease-in-out infinite;
+}
+.updown_anime02{
+	animation: updown 3s ease-in-out infinite 1s;
+}
+.updown_anime03{
+	animation: updown 3s ease-in-out infinite .5s;
+}
+@keyframes updown{
+	0%{
+		transform: translate(0, 0px);
+	}
+	50%{
+		transform: translate(0, 15px);
+	}
+	100%{
+		transform: translate(0, 0px)
+	}
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top03{
+	margin-top: 10rem;
+	padding: 0 0 5rem;
+	z-index: 2;
+	background: #EFF3F5;
+}
+.top03 .box{
+	padding: 0 1.5rem;
+}
+.top03 .l_box{
+	margin-bottom: 4.5rem;
+}
+.top03 .ttl_wrap h3{
+	margin-top: -1.5rem;
+}
+.top03 .l_box .txt{
+	position: relative;
+	margin-top: 3rem;
+	z-index: 2;
+}
+.top03 .l_box .txt p{
+	font-size: 0.93rem;
+	font-weight: 500;
+	line-height: 2.428;
+}
+.top03 .l_box .btn{
+	margin-top: 2.5rem;
+}
+.top03 .r_box a{
+	position: relative;
+	margin-top: 3.5rem;
+}
+.top03 .r_box a:first-of-type{
+	margin-top: 0;
+}
+.top03 .r_box a .img{
+	box-shadow: 5px 5px 20px rgba(0,25,52,.4);
+}
+.top03 .r_box a .txt{
+	position: absolute;
+	top: 50%;
+	left: -1rem;
+	transform: translateY(-50%);
+	width: 9.5rem;
+	padding: 0.75rem 1rem 0.75rem 1.25rem;
+	box-shadow: 5px 5px 30px rgba(0,25,52,.4);
+	z-index: 3;
+}
+.top03 .r_box a .txt p{
+	color: #fff;
+	line-height: 1.3125;
+}
+.top03 .r_box a .txt .txt01{
+	font-size: 0.93rem;
+	font-weight: 500;
+}
+.top03 .r_box a .txt .txt02{
+	font-size: 1.13rem;
+	font-weight: 700;
+	margin-top: 0.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top04{
+	padding: 2.5rem 0 3.5rem;
+}
+.top04::after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, #03A8E5, #012869);
+	z-index: -2;
+}
+.top04 .box{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.top04 .r_box{
+	order: 1;
+}
+.top04 .r_box .ttl_wrap02{
+	align-items: center;
+	margin-bottom: 1rem;
+}
+.top04 .r_box .ttl_wrap02 p{
+	font-size: 1.13rem;
+	text-shadow: 0 0 6px rgba(0,0,0,.16);
+}
+.top04 .r_box .ttl_wrap02 .en img{
+	height: 4rem;
+}
+.top04 .l_box{
+	order: 2;
+	position: relative;
+	margin: 0 -2rem;
+}
+.top04 .l_box video{
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top05{
+	padding: 5rem 0;
+	background: url(../images/top/top05_bg01.png) center center / cover no-repeat;
+}
+.top05 .box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.top05 .r_box{
+	order: 1;
+	margin-bottom: 4rem;
+}
+.top05 .r_box .txt{
+	position: relative;
+	margin-top: 2rem;
+	z-index: 2;
+}
+.top05 .r_box .txt p{
+	font-size: 0.93rem;
+	font-weight: 500;
+	line-height: 2.428;
+	color: var(--blue);
+}
+.top05 .r_box .btn{
+	margin-top: 2rem;
+}
+.top05 .l_box{
+	order: 2;
+	position: relative;
+}
+.top05 .l_box .fig01{
+	position: absolute;
+	width: 100px;
+	top: -3rem;
+	left: -0.8rem;
+	z-index: 1;
+}
+.top05 .l_box .fig02{
+	position: absolute;
+	width: 55px;
+	top: 2.5rem;
+	left: -1.5rem;
+	z-index: 1;
+}
+.top05 .l_box .fig03{
+	position: absolute;
+	width: 90px;
+	bottom: -3.75rem;
+	right: -2rem;
+	z-index: 3;
+}
+.top05 .l_box .img{
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+.top05 .l_box .img::before{
+	position: absolute;
+	content: '';
+	top: 0.75rem;
+	left: 0.75rem;
+	width: 100%;
+	height: 100%;
+	background: var(--blue);
+	z-index: -1;
+}
+.top05 .l_box .img img{
+	width: 100%;
+	height: auto;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ06 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top06{
+	padding: 3.5rem 0;
+	margin-bottom: 5rem;
+}
+.top06::after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, #03A8E5, #012869);
+	z-index: -2;
+}
+.top06 .box{
+	padding: 0 1rem;
+}
+.top06 .l_box .img{
+	margin: 1.5rem -3rem 1rem 0;
+	box-shadow: 5px 5px 20px rgba(0,38,80,.39);
+}
+.top06 .l_box .img img{
+	width: 100%;
+	height: auto;
+}
+.top06 .l_box .txt p{
+	font-size: 0.93rem;
+	font-weight: 500;
+	line-height: 2.428;
+	color: #fff;
+}
+.top06 .l_box .btn{
+	margin-top: 2rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ06 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 募集要項 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.recruit_wrap{
+	padding: 2.5rem 0 5rem;
+}
+.recruit_wrap::before{
+	position: absolute;
+	content: '';
+	background: url(../images/common/recruit_bg_sp.png) bottom center / cover no-repeat;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.recruit_wrap .box{
+	position: relative;
+	text-align: center;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.recruit_wrap .box p{
+	font-size: 1.67rem;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0 0 10px rgba(0,61,126,.41);
+}
+.recruit_wrap .btn{
+	margin-top: 4.5rem;
+}
+.recruit_wrap .btn a{
+	width: 16.8rem;
+	margin: 0 auto;
+	padding: 0.75rem 0.5rem;
+	font-size: 1.26rem;
+	letter-spacing: 0.15rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 募集要項 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.privacypolicy01 .box{
+	margin: 0 auto;
+}
+.privacypolicy01 .box h1{
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 0 0 2rem;
+}
+.privacypolicy01 .box h2{
+	font-size: 1.1rem;
+	margin: 2.5rem 0 1rem;
+}
+.privacypolicy01 .box ol{
+	margin: 1rem 0 1rem 1rem;
+}
+.privacypolicy01 .box ol li{
+	list-style: decimal;
+	margin: 0.5rem 0;
+}
+.privacypolicy01 .box ul{
+	margin: 1rem 0 1rem 1rem;
+}
+.privacypolicy01 .box ul li{
+	list-style: disc;
+}
+.privacypolicy01 .box ul li ol{
+	margin: 0rem 0 1.5rem 1rem;
+}
+.privacypolicy01 .box ul li ol li{
+	list-style: decimal;
+}
+.privacypolicy01 .box p{
+	margin: 0.5rem 0;
+}
+.privacypolicy01 .box .right{
+	text-align: right;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ プライバシーポリシー01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+@media screen and (orientation:portrait) {/* 縦向き */}
+@media screen and (orientation:landscape) {/* 横向き */}
