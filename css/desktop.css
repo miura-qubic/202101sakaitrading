@@ -549,6 +549,10 @@ footer .copyright{
 	z-index: -10;
 }
 .top02 .bg img{
+	width: auto;
+	height: 580px;
+}
+.top02 .bg img{
 	object-position: 0% 50%;
 }
 .top02 .txt{
@@ -1031,6 +1035,7 @@ footer .copyright{
 	height: 150%;
 	background: url(../images/special_contents/hexagon_shadow.png) center center / contain no-repeat;
 	z-index: -1;
+	pointer-events: none;
 }
 .special_contents02 article .bg::after{
 	position: absolute;
@@ -1209,6 +1214,107 @@ footer .copyright{
 	display: block;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ jobinfo02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lineup01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.lineup01::after{
+	background: url(../images/lineup/mv.png) center center / 1920px auto no-repeat;
+}
+.lineup01 h1{
+	display: block;
+	width: 402.45px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lineup01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lineup02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.lineup02{
+	padding: 6rem 0;
+}
+.lineup02 .box .item{
+	width: 200%;
+	display: flex;
+	justify-content: flex-start;
+}
+.lineup02 .box .item:nth-of-type(2){
+	margin-top: -2.75rem;
+	margin-left: -9.25rem;
+}
+.lineup02 .item .fig{
+	position: relative;
+	width: 255.78px;
+	margin: 0 1rem;
+}
+.lineup02 .item a .img img{
+	width: 100%;
+	height: auto;
+}
+.lineup02 .item .fig.link::before{
+	position: absolute;
+	content: '';
+	bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 1.1rem 1.7rem 0 1.7rem;
+	border-color: #fff transparent transparent transparent;
+}
+.lineup02 .item .fig.link::after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) translateY(-1rem);
+	width: 50%;
+	height: 50%;
+	opacity: 0;
+	transition: .3s ease-out;
+}
+.lineup02 .item .fig.link01::after{
+	background: url(../images/lineup/lineup02_img01.svg) center center / contain no-repeat;
+}
+.lineup02 .item .fig.link02::after{
+	background: url(../images/lineup/lineup02_img02.svg) center center / contain no-repeat;
+}
+.lineup02 .item .fig.link03::after{
+	background: url(../images/lineup/lineup02_img03.svg) center center / contain no-repeat;
+}
+.lineup02 .item .fig.link04::after{
+	background: url(../images/lineup/lineup02_img04.svg) center center / contain no-repeat;
+}
+.lineup02 .item .fig.link05::after{
+	background: url(../images/lineup/lineup02_img05.svg) center center / contain no-repeat;
+}
+.lineup02 .item .fig.link06::after{
+	background: url(../images/lineup/lineup02_img06.svg) center center / contain no-repeat;
+}
+.lineup02 .item .link:hover::after{
+	opacity: 1;
+}
+
+.lineup02 .item .fig02 p,
+.lineup02 .item .link p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	width: 100%;
+	text-align: center;
+	transition: font-size .3s ease-out;
+}
+.lineup02 .item .fig02 p{
+	color: var(--blue);
+}
+.lineup02 .item .link p{
+	color: #fff;
+}
+.lineup02 .item .link:hover p{
+	font-size: 1.875rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lineup01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
