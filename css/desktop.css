@@ -1678,6 +1678,29 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ interview01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.interview01::after{
+	background: url(../images/interview/mv.png) center center / 1920px auto no-repeat;
+}
+.interview01 h1{
+	display: block;
+	width: 472.75px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ interview02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.interview02{
+	padding: 4rem 0 6rem;
+}
+.interview02 .box{
+	display: flex;
+}
+.interview02 .box .item{
+	display: flex;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
 
