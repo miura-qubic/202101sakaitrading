@@ -1510,6 +1510,172 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lineup03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.data01::after{
+	background: url(../images/data/mv.png) center center / 1920px auto no-repeat;
+}
+.data01 h1{
+	display: block;
+	width: 201.6px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.data02{
+	padding: 8rem 0 3rem;
+}
+.data .txt_anime{
+	position: relative;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.data h2{
+	position: relative;
+	display: inline-block;
+	font-size: 2.5rem;
+	letter-spacing: 0.2em;
+	color: var(--blue);
+}
+.data .ttl::after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%) translateY(1.5rem);
+	width: 5.25rem;
+	height: 4px;
+	background: linear-gradient(90deg, #03A8E5, #012869);;
+	z-index: 2;
+}
+.data .box{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+.data .box .img{
+	margin-top: -3rem;
+}
+.data .box .img:nth-of-type(-n+2){
+	margin-top: 0;
+}
+.data02 .box .img01{
+	width: 56.25%;
+}
+.data02 .box .img02{
+	width: 46.75%;
+	margin-left: -3%;
+}
+.data02 .box .img03{
+	width: 100%;
+}
+.data02 .box .img04{
+	position: relative;
+	width: 36.8%;
+	z-index: 3;
+}
+.data02 .box .img05{
+	position: relative;
+	width: 66.2%;
+	margin-left: -3%;
+	z-index: 3;
+}
+.data02 .box .img06{
+	position: relative;
+	width: 100%;
+	margin-top: -1.5rem;
+	z-index: 2;
+}
+.data .box .img img{
+	width: 100%;
+	height: auto;
+}
+.data02 .box .img06 .map{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) translateY(-4rem);
+	width: 116%;
+	height: 116%;
+	z-index: -1;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.data03{
+	padding: 6rem 0 3rem;
+}
+.data03 .box .img01{
+	width: 52%;
+}
+.data03 .box .img02{
+	width: 51%;
+	margin-left: -3%;
+}
+.data03 .box .img03{
+	width: 64.7%;
+}
+.data03 .box .img04{
+	width: 38.3%;
+	margin-left: -3%;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.data04{
+	padding: 6rem 0 9rem;
+}
+.data04 .item01{
+	width: 43.5%;
+}
+.data04 .item01 .img01,
+.data04 .item01 .img02{
+	width: 100%;
+}
+.data04 .item01 .img.img02{
+	margin-top: -3rem;
+}
+.data04 .img03{
+	width: 59.5%;
+	margin-left: -3%;
+}
+.data04 .img04{
+	width: 52%;
+}
+.data04 .img05{
+	width: 51%;
+	margin-left: -3%;
+}
+.data04 .item02,
+.data04 .item03{
+	margin-top: -3rem;
+}
+.data04 .item02{
+	width: 61.2%;
+}
+.data04 .item03{
+	width: 41.8%;
+	margin-left: -3%;
+}
+.data04 .item02 .img.img09,
+.data04 .item03 .img.img08,
+.data04 .item02 .img.img10{
+	margin-top: -3rem;
+}
+.data04 .img11{
+	width: 33.97%;
+	margin-top: -3rem;
+}
+.data04 .item04{
+	width: 69.03%;
+	margin-top: -3rem;
+	margin-left: -3%;
+}
+.data04 .item04 .img.img13{
+	margin-top: -3rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
 
