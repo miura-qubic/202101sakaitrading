@@ -411,6 +411,8 @@ footer .logo{
 	order: 2;
 }
 footer ul{
+	position: relative;
+	z-index: 9;
 	order: 1;
 	display: flex;
 	flex-wrap: wrap;
@@ -894,6 +896,7 @@ footer .copyright{
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 募集要項 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .recruit_wrap{
 	padding: 2.5rem 0 5rem;
+	z-index: 3;
 }
 .recruit_wrap::before{
 	position: absolute;
@@ -932,7 +935,7 @@ footer .copyright{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 募集要項 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.lower_mv{ z-index: 2; }
+.lower_mv{ z-index: 3; }
 .lower_mv::after{
 	position: absolute;
 	content: '';
@@ -1224,6 +1227,214 @@ footer .copyright{
 	margin-top: 1rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ jobinfo02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lineup01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.lineup01::after{
+	background: url(../images/lineup/mv_sp.png) center center / cover no-repeat;
+}
+.lineup01 h1{
+	display: block;
+	width: 156px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ jobinfo01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lineup02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.lineup02{
+	padding: 3rem 0;
+	z-index: 2;
+}
+.lineup02 .box .item{
+	display: flex;
+	justify-content: center;
+}
+.lineup02 .box .item:nth-of-type(2){
+	margin-top: -3%;
+}
+.lineup02 .item .fig{
+	position: relative;
+	width: 19%;
+	margin: 0 0.4rem;
+}
+.lineup02 .item a .img img{
+	width: 100%;
+	height: auto;
+}
+.lineup02 .item .fig.link::before{
+	position: absolute;
+	content: '';
+	bottom: 0.6rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 1.5vw 2.3vw 0 2.3vw;
+	border-color: #fff transparent transparent transparent;
+	z-index: 2;
+}
+.lineup02 .item .fig.link01 .img{
+	position: relative;
+}
+.lineup02 .item .fig.link .img::before{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 135%;
+	height: 135%;
+	background: url(../images/lineup/lineup02_fig02_shadow.png) center center / contain no-repeat;
+	z-index: -1;
+}
+.lineup02 .item .fig02 p,
+.lineup02 .item .link p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 3.73334vw;
+	font-weight: 700;
+	letter-spacing: 0.05rem;
+	width: 100%;
+	text-align: center;
+}
+.lineup02 .item .fig02 p{
+	color: var(--blue);
+}
+.lineup02 .item .link p{
+	color: #fff;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lineup02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lineup03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.lineup03{
+	overflow: hidden;
+}
+.lineup03 .bluebox{
+	position: relative;
+	padding: 3rem 0;
+	margin-bottom: 172vw;
+}
+.lineup03 .bluebox .item{
+	position: relative;
+	z-index: 3;
+}
+.lineup03 .bluebox .item .ttlbox{
+	position: relative;
+	min-width: 11rem;
+	width: 70%;
+	margin: 0 auto;
+}
+.lineup03 .bluebox .item .ttlbox h2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 1.33rem;
+	font-weight: 700;
+	letter-spacing: 0.15rem;
+	z-index: 2;
+}
+.lineup03 .bluebox .item .ttlbox .img{
+	position: relative;
+	z-index: 2;
+}
+.lineup03 .bluebox .fig{
+	position: absolute;
+	z-index: 1;
+}
+.lineup03 .bluebox .fig01{
+	width: 35vw;
+	top: -1%;
+	left: -27%;
+	animation: updown 3s ease-in-out infinite .5s;
+}
+.lineup03 .bluebox .fig02{
+	width: 24vw;
+	bottom: 15%;
+	right: -35%;
+	animation: updown 3s ease-in-out infinite;
+}
+.lineup03 .bluebox .fig03{
+	width: 25vw;
+	bottom: -10%;
+	right: -15%;
+	animation: updown 3s ease-in-out infinite 1s;
+	z-index: 2;
+}
+.lineup03 .bluebox .item .rightbox{
+	position: relative;
+}
+.lineup03 .bluebox .item .rightbox ul{
+	margin-left: 3rem;
+}
+.lineup03 .bluebox .item .rightbox ul li{
+	color: #fff;
+	list-style: disc;
+	font-weight: 600;
+}
+.lineup03 .bluebox .item .rightbox .txt{
+	padding: 0.35rem;
+	margin-top: 1rem;
+	box-shadow: 10px 10px 30px rgba(0,0,0,.16);
+}
+.lineup03 .bluebox .item .rightbox .txt_in{
+	background: #fff;
+	padding: 1rem 1.5rem;
+}
+.lineup03 .bluebox .item .rightbox .txt_in p{
+	color: #111;
+	font-size: 0.93rem;
+	font-weight: 500;
+	line-height: 2.428;
+}
+.lineup03 .bluebox .img_wrap{
+	position: relative;
+	z-index: 5;
+	margin-top: 2.5rem;
+	margin-bottom: -160vw;
+	overflow: hidden;
+}
+.lineup03 .bluebox .img_wrap h3{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	font-size: 1.33rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+.lineup03 .bluebox .img_wrap h3::after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 100%;
+	z-index: 1;
+	display: block;
+	width: 500%;
+	height: 1px;
+	background: #fff;
+	margin-left: 1rem;
+}
+.lineup03 .bluebox .img_wrap_in .inner{
+	margin-top: 2rem;
+}
+.lineup03 .bluebox .img_wrap_in .inner:first-of-type{
+	margin-top: 0;
+}
+.lineup03 .bluebox .img_wrap_in .inner .img{
+	box-shadow: 5px 5px 30px rgba(0,38,80,.39);
+}
+.lineup03 .bluebox .img_wrap_in .inner .img img{
+	width: 100%;
+	height: auto;
+}
+.lineup03 .bluebox .img_wrap_in .inner p{
+	color: #111;
+	font-size: 0.86rem;
+	margin-top: 0.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lineup03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{

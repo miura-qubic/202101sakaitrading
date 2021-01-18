@@ -378,10 +378,12 @@ footer .logo{
 	margin: 0 auto;
 }
 footer ul{
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-top: 3rem;
+	z-index: 9;
 }
 footer ul li a{
 	position: relative;
@@ -1263,6 +1265,7 @@ footer .copyright{
 	border-style: solid;
 	border-width: 1.1rem 1.7rem 0 1.7rem;
 	border-color: #fff transparent transparent transparent;
+	z-index: 2;
 }
 .lineup02 .item .fig.link::after{
 	position: absolute;
@@ -1310,7 +1313,6 @@ footer .copyright{
 	background: url(../images/lineup/lineup02_fig02_shadow.png) center center / contain no-repeat;
 	z-index: -1;
 }
-
 .lineup02 .item .fig02 p,
 .lineup02 .item .link p{
 	position: absolute;
