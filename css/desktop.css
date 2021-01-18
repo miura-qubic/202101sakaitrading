@@ -1518,23 +1518,19 @@ footer .copyright{
 	display: block;
 	width: 201.6px;
 }
+.data01.lower_mv .lower_ttl .txt02{
+	font-size: 1.1875rem;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .data02{
 	padding: 8rem 0 3rem;
 }
-.data .txt_anime{
+.data .ttl{
 	position: relative;
 	text-align: center;
 	margin-bottom: 3rem;
-}
-.data h2{
-	position: relative;
-	display: inline-block;
-	font-size: 2.5rem;
-	letter-spacing: 0.2em;
-	color: var(--blue);
 }
 .data .ttl::after{
 	position: absolute;
@@ -1546,6 +1542,13 @@ footer .copyright{
 	height: 4px;
 	background: linear-gradient(90deg, #03A8E5, #012869);;
 	z-index: 2;
+}
+.data h2{
+	position: relative;
+	display: inline-block;
+	font-size: 2.5rem;
+	letter-spacing: 0.2em;
+	color: var(--blue);
 }
 .data .box{
 	display: flex;
@@ -1594,9 +1597,8 @@ footer .copyright{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%) translateY(-4rem);
+	transform: translate(-50%,-50%) translateY(-1.5rem);
 	width: 116%;
-	height: 116%;
 	z-index: -1;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */

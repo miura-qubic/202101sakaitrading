@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="424.774" height="311.293" viewBox="0 0 424.774 311.293">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#03a8e5"/>
+      <stop offset="1" stop-color="#012869"/>
+    </linearGradient>
+    <filter id="パス_301" x="0" y="0" width="424.774" height="311.293" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="-0.03" xlink:href="#linear-gradient"/>
+    <filter id="長方形_216" x="20.953" y="33.825" width="166" height="77" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-color="#013778" flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="従業員数" transform="translate(-288.653 -3938.066)">
+    <g id="グループ_241" data-name="グループ 241" transform="translate(323.653 3973.066)">
+      <g transform="matrix(1, 0, 0, 1, -35, -35)" filter="url(#パス_301)">
+        <path id="パス_301-2" data-name="パス 301" d="M0,0H334.774V221.294H0Z" transform="translate(35 35)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="パス_302" data-name="パス 302" d="M0,0H326.774V213.294H0Z" transform="translate(4 4)" fill="#edf9ff"/>
+    </g>
+    <text id="単体_89名" data-name="単体：89名" transform="translate(369.491 4082.59)" fill="#0052aa" font-size="34" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.1em"><tspan x="0" y="0">単体：</tspan><tspan y="0" font-size="68" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700">89</tspan><tspan y="0">名</tspan></text>
+    <text id="連結_330名" data-name="連結：330名" transform="translate(369.643 4157.254)" fill="#0052aa" font-size="34" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.1em"><tspan x="0" y="0">連結：</tspan><tspan y="0" font-size="68" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700">330</tspan><tspan y="0">名</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 288.65, 3938.07)" filter="url(#長方形_216)">
+      <rect id="長方形_216-2" data-name="長方形 216" width="136" height="47" transform="translate(35.95 48.83)" fill="url(#linear-gradient-2)"/>
+    </g>
+    <text id="従業員数-2" data-name="従業員数" transform="translate(355.792 4014.474)" fill="#fff" font-size="15" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.2em"><tspan x="0" y="0">従業員数</tspan></text>
+  </g>
+</svg>

@@ -1436,6 +1436,114 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lineup03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.data01::after{
+	background: url(../images/data/mv_sp.png) center center / cover no-repeat;
+}
+.data01 h1{
+	display: block;
+	width: 77px;
+}
+.data01.lower_mv .lower_ttl{
+	transform: translateY(3rem);
+}
+.data01.lower_mv .lower_ttl .txt02{
+	font-size: 0.66rem;
+	margin-top: 1rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.data02{
+	padding: 3rem 0 0;
+}
+.data .ttl{
+	position: relative;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.data .ttl::after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%) translateY(0.5rem);
+	width: 5.6rem;
+	height: 4px;
+	background: linear-gradient(90deg, #03A8E5, #012869);;
+	z-index: 2;
+}
+.data h2{
+	position: relative;
+	display: inline-block;
+	font-size: 1.33rem;
+	letter-spacing: 0.15em;
+	color: var(--blue);
+}
+.data .box{
+	margin: 0 -2rem;
+}
+.data .box > .img{
+	width: 105%;
+	margin-top: -4rem;
+}
+.data .box > .img:first-of-type{
+	margin-top: 0;
+}
+.data02 .box .img06{
+	position: relative;
+	z-index: 2;
+}
+.data .box .img img{
+	width: 100%;
+	height: auto;
+}
+.data02 .box .img06 .map{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) translateX(-3.3rem);
+	width: 165%;
+	z-index: -1;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.data03{
+	padding: 2.5rem 0 0;
+}
+.data03 .box .img02{
+	margin-top: -3rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.data04{
+	padding: 2.5rem 0 3rem;
+}
+.data04 .item01,
+.data04 .item02,
+.data04 .item03,
+.data04 .item04{
+	width: 105%;
+}
+.data04 .item02,
+.data04 .item03,
+.data04 .item04{
+	margin-top: -4rem;
+}
+.data04 .item01 .img{
+	width: 100%;
+}
+.data04 .item01 .img02,
+.data04 .item02 .img07,
+.data04 .item03 .img09,
+.data04 .item03 .img10,
+.data04 .item04 .img13{
+	margin-top: -4rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{
 	margin: 0 auto;

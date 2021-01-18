@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="428.563" height="338.511" viewBox="0 0 428.563 338.511">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#03a8e5"/>
+      <stop offset="1" stop-color="#012869"/>
+    </linearGradient>
+    <filter id="パス_301" x="0" y="0" width="428.563" height="338.511" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="-0.03" xlink:href="#linear-gradient"/>
+    <filter id="長方形_221" x="235.765" y="35.12" width="150" height="77" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-color="#013778" flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="血液型" transform="translate(-1072.653 -5038.136)">
+    <g id="グループ_246" data-name="グループ 246" transform="translate(1107.653 5073.136)">
+      <g transform="matrix(1, 0, 0, 1, -35, -35)" filter="url(#パス_301)">
+        <path id="パス_301-2" data-name="パス 301" d="M0,0H338.563V248.511H0Z" transform="translate(35 35)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="パス_302" data-name="パス 302" d="M0,0H330.563V240.511H0Z" transform="translate(4 4)" fill="#edf9ff"/>
+    </g>
+    <text id="分からない_3_" data-name="分からない：3％" transform="translate(1284.418 5285.255)" fill="#0052aa" font-size="13" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.1em"><tspan x="0" y="0">分からない：</tspan><tspan y="0" font-size="26" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700">3</tspan><tspan y="0">％</tspan></text>
+    <text id="_型_40_" data-name="Ａ型：40％" transform="translate(1134.418 5168.255)" fill="#0052aa" font-size="28" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.1em"><tspan x="0" y="0">Ａ型：</tspan><tspan y="0" font-size="56" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700">40</tspan><tspan y="0">％</tspan></text>
+    <text id="_型_29_" data-name="Ｏ型：29％　" transform="translate(1134.418 5226.255)" fill="#0052aa" font-size="22" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.1em"><tspan x="0" y="0">Ｏ型：</tspan><tspan y="0" font-size="43" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700">29</tspan><tspan y="0">％　</tspan></text>
+    <text id="_型_18_" data-name="Ｂ型：18％" transform="translate(1284.418 5226.255)" fill="#0052aa" font-size="22" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.1em"><tspan x="0" y="0">Ｂ型：</tspan><tspan y="0" font-size="43" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700">18</tspan><tspan y="0">％</tspan></text>
+    <text id="_AB型_10_" data-name=" AB型：10％" transform="translate(1134.418 5286.255)" fill="#0052aa" font-size="17" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0" xml:space="preserve"> AB</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">型：</tspan><tspan y="0" font-size="34">10</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">％</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 1072.65, 5038.14)" filter="url(#長方形_221)">
+      <rect id="長方形_221-2" data-name="長方形 221" width="120" height="47" transform="translate(250.76 50.12)" fill="url(#linear-gradient-2)"/>
+    </g>
+    <text id="血液型-2" data-name="血液型" transform="translate(1353.892 5115.902)" fill="#fff" font-size="17" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.2em"><tspan x="0" y="0">血液型</tspan></text>
+  </g>
+</svg>

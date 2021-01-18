@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="428.704" height="343.293" viewBox="0 0 428.704 343.293">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#03a8e5"/>
+      <stop offset="1" stop-color="#012869"/>
+    </linearGradient>
+    <filter id="パス_301" x="0" y="0" width="428.704" height="343.293" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="-0.03" xlink:href="#linear-gradient"/>
+    <filter id="長方形_222" x="20.906" y="34.551" width="277" height="71" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-color="#013778" flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="通勤時間" transform="translate(-288.653 -5310.066)">
+    <g id="グループ_251" data-name="グループ 251" transform="translate(323.653 5345.066)">
+      <g transform="matrix(1, 0, 0, 1, -35, -35)" filter="url(#パス_301)">
+        <path id="パス_301-2" data-name="パス 301" d="M0,0H338.7V253.293H0Z" transform="translate(35 35)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="パス_302" data-name="パス 302" d="M0,0H330.7V245.293H0Z" transform="translate(4 4)" fill="#edf9ff"/>
+    </g>
+    <g id="グループ_262" data-name="グループ 262" transform="translate(513.985 5411.733)">
+      <path id="パス_668" data-name="パス 668" d="M299.717,2569.945v44.7l2.439,44.638a60.143,60.143,0,0,0,8.02-2.052A59.382,59.382,0,0,0,329.83,2646.8c8.514-7.139,14.018-20.157,14.526-29.721a44.749,44.749,0,0,0-44.639-47.133Zm35.6,80.731a50.665,50.665,0,1,1,14.84-35.826,50.506,50.506,0,0,1-14.84,35.826ZM310.907,2553.6v-13.014H288V2553.6a62.788,62.788,0,1,0,22.912,0Zm5.328-30.6H283.2v12.255h33.036V2523Zm43.65,30.735-14.715-11.807-8.7,10.85,14.715,11.806,8.7-10.85Z" transform="translate(-236.663 -2523)" fill="#a8e1f7"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 288.65, 5310.07)" filter="url(#長方形_222)">
+      <rect id="長方形_222-2" data-name="長方形 222" width="247" height="41" transform="translate(35.91 49.55)" fill="url(#linear-gradient-2)"/>
+    </g>
+    <text id="通勤時間_家から会社まで_" data-name="通勤時間（家から会社まで）" transform="translate(342.316 5384.896)" fill="#fff" font-size="14" font-family="HiraginoSans-W6, Hiragino Sans" letter-spacing="0.2em"><tspan x="0" y="0">通勤時間（家から会社まで）</tspan></text>
+    <text id="_30分以上1時間未満_47_" data-name="30分以上1時間未満：47％" transform="translate(342.559 5449.617)" fill="#0052aa" font-size="20" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">30</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">分以上</tspan><tspan y="0">1</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">時間未満：</tspan><tspan y="0" font-size="40">47</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">％</tspan></text>
+    <text id="_1時間以上_33_" data-name="1時間以上：33％" transform="translate(342.559 5490.617)" fill="#0052aa" font-size="15" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">1</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">時間以上：</tspan><tspan y="0" font-size="29">33</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">％</tspan></text>
+    <text id="_15分未満_10_" data-name="15分未満：10％" transform="translate(342.559 5523.617)" fill="#0052aa" font-size="11" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">15</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">分未満：</tspan><tspan y="0" font-size="22">10</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">％</tspan></text>
+    <text id="_15分以上30分未満_10_" data-name="15分以上30分未満：10％" transform="translate(342.559 5553.617)" fill="#0052aa" font-size="11" font-family="DINCondensed-Bold, DIN Condensed" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">15</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">分以上</tspan><tspan y="0">30</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">分未満：</tspan><tspan y="0" font-size="22">10</tspan><tspan y="0" font-family="HiraginoSans-W6, Hiragino Sans" font-weight="400">％</tspan></text>
+  </g>
+</svg>
