@@ -1337,6 +1337,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ lineup03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .lineup03{
+	padding: 0 0 8rem;
 	overflow: hidden;
 }
 .lineup03 .bluebox{
