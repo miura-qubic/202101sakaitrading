@@ -35,7 +35,7 @@ section,
 }
 .l_container{
 	width: 100%;
-	padding:0 1rem;
+	padding:0 2rem;
 }
 .container{
 	width: 100%;
@@ -270,6 +270,28 @@ section,
 	left: 50%;
 	transform: translate(-50%,-50%);
 	z-index: -1;
+}
+
+.txtflow_anime{ overflow: hidden; }
+.txtflow_anime span{
+	display: inline-block;
+	transform: translateY(50%);
+	opacity: 0;
+}
+.txtflow_anime span:nth-of-type(1){ transition: .1s .1s; }
+.txtflow_anime span:nth-of-type(2){ transition: .1s .125s; }
+.txtflow_anime span:nth-of-type(3){ transition: .1s .15s; }
+.txtflow_anime span:nth-of-type(4){ transition: .1s .175s; }
+.txtflow_anime span:nth-of-type(5){ transition: .1s .2s; }
+.txtflow_anime span:nth-of-type(6){ transition: .1s .225s; }
+.txtflow_anime span:nth-of-type(7){ transition: .1s .25s; }
+.txtflow_anime span:nth-of-type(8){ transition: .1s .275s; }
+.txtflow_anime span:nth-of-type(9){ transition: .1s .3s; }
+.txtflow_anime span:nth-of-type(10){ transition: .1s .325s; }
+.txtflow_anime span:nth-of-type(11){ transition: .1s .35s; }
+.txtflow_anime.start span{
+	opacity: 1;
+	transform: translateY(0);
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1551,6 +1573,111 @@ footer .copyright{
 	margin-top: -4rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ interview01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.interview01::after{
+	background: url(../images/interview/mv_sp.png) center center / cover no-repeat;
+}
+.interview01 h1{
+	display: block;
+	width: 156px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ interview02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.interview02{
+	padding: 2rem 0 6rem;
+}
+.interview02 .box .item{
+	margin-top: 1.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.interview02 .box .item:first-of-type{
+	margin-top: 0;
+}
+.interview02 .item .l_box{ width: 47%; }
+.interview02 .item:nth-of-type(odd) .l_box{
+	order: 1;
+	margin-left: -5%;
+}
+.interview02 .item:nth-of-type(even) .l_box{
+	order: 2;
+}
+.interview02 .item .l_box .img{
+	width: 9.75rem;
+}
+.interview02 .item .l_box .img img{
+	width: 100%;
+	height: auto;
+}
+.interview02 .item .txt{
+	width: 60%;
+	margin-bottom: 1rem;
+}
+.interview02 .item:nth-of-type(odd) .txt{
+	order: 2;
+	margin-left: 1.5%;
+}
+.interview02 .item:nth-of-type(even) .txt{
+	order: 1;
+}
+.interview02 .item .txt h2{
+	font-size: 1.13rem;
+	font-weight: 700;
+	line-height: 1.5;
+	color: var(--blue);
+}
+.interview02 .item .txt .emp_name{
+	margin: 1rem 0 1rem;
+}
+.interview02 .item .txt .emp_name p{
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+.interview02 .item .txt .emp_name h3{
+	font-size: 1.13rem;
+	font-weight: 500;
+	line-height: 1.4;
+}
+.interview02 .item .txt .btn a{
+	font-size: 0.93rem;
+	width: 10.5rem;
+	box-shadow: 0 0 10px rgba(1,55,120,.32);
+}
+.interview02 .item .txt .btn a::after{
+	width: 55px;
+	transform: translateY(-50%) translateX(-27.5px);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ interview共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.interview{
+	padding: 0 0 6rem;
+}
+.interview .mv{
+	position: relative;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ interview03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.interview03 .mv{
+	background: url(../images/interview/interview03_img01_sp.png) center center /cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ interview04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.interview04 .mv{
+	background: url(../images/interview/interview04_img01_sp.png) center center /cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ interview05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.interview05 .mv{
+	background: url(../images/interview/interview05_img01_sp.png) center center /cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{
