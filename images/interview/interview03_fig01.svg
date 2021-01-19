@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="209.843" height="226.583" viewBox="0 0 209.843 226.583">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#03a8e5"/>
+      <stop offset="1" stop-color="#003a9a"/>
+    </linearGradient>
+    <filter id="六角形" x="0" y="0" width="209.843" height="226.583" filterUnits="userSpaceOnUse">
+      <feOffset dx="15" dy="15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#六角形)">
+    <path id="六角形-2" data-name="六角形" d="M119.843,102.437V34.146L59.922,0,0,34.146v68.292l59.922,34.146Z" transform="translate(30 30)" opacity="0.653" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

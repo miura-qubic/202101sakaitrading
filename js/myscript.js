@@ -43,8 +43,28 @@ $(function () {
 		$(this).addClass('start');
 	});
 	// フェードイン
-	$('.fadein').on('inview',function(){
+	$('.fadein, .txtflow_anime').on('inview',function(){
 		$(this).addClass('active');
+		if($(this).hasClass('anime01')){
+			$(this).delay(100).queue(function(){
+				$(this).addClass('start');
+			});
+		}
+		if($(this).hasClass('anime02')){
+			$(this).delay(300).queue(function(){
+				$(this).addClass('start');
+			});
+		}
+		if($(this).hasClass('anime03')){
+			$(this).delay(500).queue(function(){
+				$(this).addClass('start');
+			});
+		}
+		if($(this).hasClass('anime04')){
+			$(this).delay(700).queue(function(){
+				$(this).addClass('start');
+			});
+		}
 	});
 
 	// スムーススクロール
