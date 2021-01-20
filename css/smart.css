@@ -1929,12 +1929,6 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents01_01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.special_contents01_01::after{
-	background: url(../images/special_contents01/mv_sp.png) center center / cover no-repeat;
-}
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents01_01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 特別コンテンツ下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .sp_lower{
 	padding: 3rem 0 0;
@@ -2090,6 +2084,12 @@ footer .copyright{
 	text-align: center;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 特別コンテンツ下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents01_01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.special_contents01_01::after{
+	background: url(../images/special_contents01/mv_sp.png) center bottom / cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents01_01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents01_02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .special_contents01_02 .box{
@@ -2388,6 +2388,22 @@ footer .copyright{
 	margin-bottom: 0.75rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents01_04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents02_01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.special_contents02_01::after{
+	background: url(../images/special_contents02/mv_sp.png) center bottom / cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents01_01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+
+
+
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents03_01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.special_contents03_01::after{
+	background: url(../images/special_contents03/mv_sp.png) center bottom / cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents03_01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{
