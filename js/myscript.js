@@ -81,9 +81,9 @@ $(function () {
 	$('a[href^="#"]').click(function () {
 		var speed = 300;
 		if (w > spwidth) {
-			var header = 100;
+			var header = 105.72;
 		} else {
-			var header = 0;
+			var header = 76;
 		}
 		var href = $(this).attr("href");
 		var target = $(href == "#" || href == "" ? 'html' : href);

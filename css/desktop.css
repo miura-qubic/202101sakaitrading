@@ -1791,9 +1791,6 @@ footer .copyright{
 .interview{
 	padding: 0 0 10rem;
 }
-.interview .mv{
-	position: relative;
-}
 .interview .mv_in{
 	height: 815px;
 	display: flex;
@@ -1804,20 +1801,26 @@ footer .copyright{
 }
 .interview .mv .txt01{
 	color: #fff;
-	z-index: 2;
 }
 .interview .mv .txt01 h2{
 	font-size: 2.5rem;
 	font-weight: 700;
 	line-height: 1.625;
 	letter-spacing: 0.1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.interview .mv .txt01 h2 .anime01,
+.interview .mv .txt01 h2 .anime02{
 	display: inline-block;
 }
 .interview .mv .txt01 h2 .anime01{
 	margin-bottom: 1.625rem;
 }
 .interview .mv .txt01 .emp_name{
-	margin-top: 1.5rem;
+	margin-top: 2.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -1904,30 +1907,26 @@ footer .copyright{
 	width: 47%;
 	height: 100%;
 }
-.interview .box .txt02 .img_wrap::before{
+.interview .box .txt02 .img_wrap::before,
+.interview .box .txt03 .img_wrap::before{
 	position: absolute;
 	content: '';
 	top: 3rem;
-	left: -110%;
 	width: 0%;
 	height: 100%;
 	background: linear-gradient(90deg, #03A8E5, #012869);
 	z-index: -1;
 	transition: .8s;
+	box-shadow: 15px 15px 30px rgba(0,0,0,.16);
+}
+.interview .box .txt02 .img_wrap::before{
+	left: -110%;
 }
 .interview .box .txt02 .img_wrap.active::before{
 	width: 200%;
 }
 .interview .box .txt03 .img_wrap::before{
-	position: absolute;
-	content: '';
-	top: 3rem;
 	left: 3rem;
-	width: 0%;
-	height: 100%;
-	background: linear-gradient(90deg, #03A8E5, #012869);
-	z-index: -1;
-	transition: .8s;
 }
 .interview .box .txt03 .img_wrap.active::before{
 	width: 200%;
