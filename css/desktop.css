@@ -1022,9 +1022,6 @@ footer .copyright{
 .lower_mv .lower_ttl{
 	transform: translateY(3.5rem);
 }
-.lower_mv .lower_ttl02{
-	transform: translateY(2.5rem);
-}
 .lower_mv .lower_ttl .txt01{
 	display: inline-block;
 	font-size: 2.1875rem;
@@ -1040,6 +1037,7 @@ footer .copyright{
 	margin-top: 2.5rem;
 }
 .lower_mv .lower_ttl02{
+	transform: translateY(2.5rem);
 	position: relative;
 	text-align: center;
 	display: flex;
