@@ -270,6 +270,7 @@ section,
 .fadein01{ transition: .8s; }
 .fadein02{ transition: .8s .2s; }
 .fadein03{ transition: .8s .4s; }
+.fadein04{ transition: .8s .6s; }
 
 .bg_frame::before{
 	position: fixed;
@@ -1901,6 +1902,12 @@ footer .copyright{
 	background: url(../images/interview/interview05_img01_sp.png) center center /cover no-repeat;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents01_01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.special_contents01_01::after{
+	background: url(../images/special_contents01/mv_sp.png) center center / cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents01_01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{

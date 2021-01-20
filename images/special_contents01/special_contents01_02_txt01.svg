@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133.194" height="83.329" viewBox="0 0 133.194 83.329">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#03a8e5"/>
+      <stop offset="1" stop-color="#012869"/>
+    </linearGradient>
+  </defs>
+  <g id="ワンポイント" transform="translate(-508.806 -1186)">
+    <g id="グループ_28" data-name="グループ 28" transform="translate(13 -1147)">
+      <path id="パス_299" data-name="パス 299" d="M73.237,62.5V20.832L36.618,0,0,20.832V62.5L36.618,83.329Z" transform="translate(569.043 2416.329) rotate(180)" fill="url(#linear-gradient)"/>
+      <path id="パス_300" data-name="パス 300" d="M65.237,56.5V18.832L32.618,0,0,18.832V56.5L32.618,75.329Z" transform="translate(565.043 2412.329) rotate(180)" fill="#edf9ff"/>
+    </g>
+    <rect id="長方形_28" data-name="長方形 28" width="117" height="28" transform="translate(525 1214)" fill="#edf9ff"/>
+    <text id="ワンポイントメモ" transform="translate(576 1233)" fill="#012869" font-size="12" font-family="HiraKakuProN-W3, Hiragino Kaku Gothic ProN"><tspan x="-47.58" y="0">ワンポイントメモ</tspan></text>
+  </g>
+</svg>

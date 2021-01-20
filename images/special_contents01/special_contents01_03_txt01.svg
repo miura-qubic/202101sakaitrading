@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.5" height="78.615" viewBox="0 0 68.5 78.615">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.139" y1="0.971" x2="0.914" y2="0.222" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#03a8e5"/>
+      <stop offset="1" stop-color="#003a9a"/>
+    </linearGradient>
+  </defs>
+  <g id="堺商事はここ" transform="translate(-739 -2273.847)">
+    <path id="パス_296" data-name="パス 296" d="M66.5,57.232V19.077L33.25,0,0,19.077V57.232L33.25,76.309Z" transform="translate(806.5 2351.309) rotate(180)" stroke="#fff" stroke-width="2" fill="url(#linear-gradient)"/>
+    <text id="堺商事は_ここ_" data-name="堺商事は
+ここ！" transform="translate(774 2310)" fill="#fff" font-size="12" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="-24" y="0">堺商事は</tspan><tspan y="0" font-family="NotoSans-Bold, Noto Sans" font-weight="700"></tspan><tspan x="-18" y="17">ここ！</tspan></text>
+  </g>
+</svg>
