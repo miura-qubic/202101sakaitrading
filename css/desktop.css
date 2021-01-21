@@ -2310,9 +2310,10 @@ footer .copyright{
 	top: -3.5rem;
 	left: 50%;
 	transform: translateX(-50%);
+	z-index: 2;
 }
 .special_contents01_03 .box .item .whitebox{
-	background: url(../images/special_contents01/special_contents01_03_bg02.svg) center center / cover no-repeat;
+	background: #fff;
 	height: 197.2px;
 	display: flex;
 	flex-direction: column;
@@ -2329,6 +2330,14 @@ footer .copyright{
 	background: url(../images/special_contents01/special_contents01_03_fig02.svg) left bottom / auto 2rem no-repeat;
 	margin-bottom: 0.5rem;
 	width: 100%;
+}
+.special_contents01_03 .box .item .whitebox.triangle::before{
+	top: -0.25rem;
+	left: -0.25rem;
+}
+.special_contents01_03 .box .item .whitebox.triangle::after{
+	right: -0.25rem;
+	border-color: transparent transparent #005899 transparent;
 }
 .special_contents01_03 .box .item .whitebox p{
 	line-height: 1.875;
@@ -2438,7 +2447,7 @@ footer .copyright{
 }
 .special_contents01_04 .box01 .item02_in .whitebox{
 	position: relative;
-	background: url(../images/special_contents01/special_contents01_04_bg01.svg) center center / cover no-repeat;
+	background: #fff;
 	height: 19.25rem;
 	display: flex;
 	flex-direction: column;
@@ -2486,8 +2495,7 @@ footer .copyright{
 }
 .special_contents01_04 .box02 .inner .whitebox{
 	position: relative;
-	background: url(../images/special_contents01/special_contents01_04_bg02.svg) center center / cover no-repeat;
-	height: 20rem;
+	background: #fff;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -2892,7 +2900,7 @@ footer .copyright{
 }
 
 .special_contents03_03 .box01{
-	margin: 13rem 0 20rem;
+	margin: 9rem 0 20rem;
 	padding-bottom: 6rem;
 }
 .special_contents03_03 .features{
@@ -2912,7 +2920,6 @@ footer .copyright{
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	margin-top: -6rem;
 	margin-left: -1rem;
 }
 .special_contents03_03 .features .subttl_wrap .num{
@@ -2921,6 +2928,8 @@ footer .copyright{
 .special_contents03_03 .features .subttl_wrap .subttl{
 	font-size: 1.875rem;
 	letter-spacing: 0.2em;
+	display: flex;
+	align-items: center;
 }
 .special_contents03_03 .box01_in01{
 	display: flex;
@@ -2933,8 +2942,32 @@ footer .copyright{
 	background: linear-gradient(135deg, #03A8E5, #012869);
 	box-shadow: 3px 3px 25px rgba(0,0,0,.16);
 }
+.triangle{
+	position: relative;
+}
+.triangle::before,
+.triangle::after{
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	z-index: 9;
+}
+.triangle::before{
+	top: 0;
+	left: 0;
+	border-width: 2.25rem 2.25rem 0 0;
+	border-color: #03A8E5 transparent transparent transparent;
+}
+.triangle::after{
+	bottom: 0;
+	right: 0;
+	border-width: 0 0 2.25rem 2.25rem;
+	border-color: transparent transparent #012869 transparent;}
+
 .special_contents03_03 .box01_in01 .item .whitebox{
-	background: url(../images/special_contents03/special_contents03_03_bg02.svg) center center / cover no-repeat;
+	background: #fff;
 	height: 297.86px;
 	display: flex;
 	flex-direction: column;
@@ -3012,6 +3045,7 @@ footer .copyright{
 	margin-top: 3rem;
 }
 .special_contents03_03 .box02_in01 .img{
+	position: relative;
 	width: 44%;
 	box-shadow: 15px 15px 30px rgba(0,0,0,.16);
 }
@@ -3061,6 +3095,9 @@ footer .copyright{
 	position: relative;
 	text-align: center;
 	margin-right: 10rem;
+}
+.special_contents03_03 .box02_in02 .item:last-of-type{
+	margin-right: 0;
 }
 .special_contents03_03 .box02_in02 .item::before{
 	position: absolute;
@@ -3146,7 +3183,7 @@ footer .copyright{
 	box-shadow: 3px 3px 25px rgba(0,0,0,.16);
 }
 .special_contents03_03 .box02_in03 .item .whitebox{
-	background: url(../images/special_contents03/special_contents03_03_bg04.svg) center center / cover no-repeat;
+	background: #fff;
 	height: 239.18px;
 	display: flex;
 	flex-direction: column;
@@ -3215,14 +3252,13 @@ footer .copyright{
 	margin-top: -9rem;
 	z-index: 1;
 }
-.special_contents03_03 .map_txt{
-	text-align: center;
-	margin-top: -4rem;
-}
-
 .special_contents03_03 .map img{
 	width: 100%;
 	height: auto;
+}
+.special_contents03_03 .map_txt{
+	text-align: center;
+	margin-top: -4rem;
 }
 .special_contents03_03 .onepoint{
 	margin-top: 4rem;
