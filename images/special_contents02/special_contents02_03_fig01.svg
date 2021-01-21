@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="211.214" height="205.003" viewBox="0 0 211.214 205.003">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#03a8e5"/>
+      <stop offset="1" stop-color="#012869"/>
+    </linearGradient>
+    <filter id="パス_300" x="0" y="0" width="211.214" height="205.003" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#パス_300)">
+    <path id="パス_300-2" data-name="パス 300" d="M110.92,95.916V31.972L55.46,0,0,31.972V95.916l55.46,31.972Z" transform="translate(72.96 177.5) rotate(-120)" opacity="0.83" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
