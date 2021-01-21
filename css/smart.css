@@ -112,7 +112,7 @@ section,
 	font-size: 1.33rem;
 	font-weight: 700;
 	letter-spacing: 0.2rem;
-	color: var(--blue);
+	color: #0052AA;
 }
 .ttl_wrap.white p,
 .ttl_wrap02.white p{
@@ -139,7 +139,7 @@ section,
 	font-size: 0.93rem;
 	font-weight: 700;
 	letter-spacing: 0.1rem;
-	color: var(--blue);
+	color: #0052AA;
 	background: #fff;
 	width: 14.3rem;
 	padding: 0.5rem;
@@ -148,7 +148,7 @@ section,
 }
 .btn.lightblue a{
 	color: #fff;
-	background: var(--lightblue);
+	background: #0390CE;
 }
 .btn.grd a{
 	font-weight: 500;
@@ -165,7 +165,7 @@ section,
 	left: 100%;
 	width: 76.6px;
 	height: 1px;
-	background: var(--blue);
+	background: #0052AA;
 	transform: translateY(-50%) translateX(-38.3px);
 	transition: .3s ease-in .1s;
 }
@@ -846,7 +846,7 @@ footer .copyright{
 	font-size: 0.93rem;
 	font-weight: 500;
 	line-height: 2.428;
-	color: var(--blue);
+	color: #0052AA;
 }
 .top05 .r_box .btn{
 	margin-top: 2rem;
@@ -889,7 +889,7 @@ footer .copyright{
 	left: 0.75rem;
 	width: 100%;
 	height: 100%;
-	background: var(--blue);
+	background: #0052AA;
 	z-index: -1;
 }
 .top05 .l_box .img img{
@@ -1367,7 +1367,7 @@ footer .copyright{
 	text-align: center;
 }
 .lineup02 .item .fig02 p{
-	color: var(--blue);
+	color: #0052AA;
 }
 .lineup02 .item .link p{
 	color: #fff;
@@ -1546,7 +1546,7 @@ footer .copyright{
 	display: inline-block;
 	font-size: 1.33rem;
 	letter-spacing: 0.15em;
-	color: var(--blue);
+	color: #0052AA;
 }
 .data .box{
 	margin: 0 -2rem;
@@ -1665,7 +1665,7 @@ footer .copyright{
 	font-size: 1.13rem;
 	font-weight: 700;
 	line-height: 1.5;
-	color: var(--blue);
+	color: #0052AA;
 }
 .interview02 .item .txt .emp_name{
 	margin: 1rem 0 1rem;
@@ -1765,7 +1765,7 @@ footer .copyright{
 	margin-top: 2rem;
 }
 .interview .box02 h4{
-	color: var(--blue);
+	color: #0052AA;
 	font-size: 0.93rem;
 	font-weight: 600;
 	margin-bottom: 0.75rem;
@@ -1789,7 +1789,7 @@ footer .copyright{
 	font-size: 1.33rem;
 	font-weight: 700;
 	letter-spacing: 0.1em;
-	color: var(--blue);
+	color: #0052AA;
 	margin-bottom: 1rem;
 }
 .interview .box .sub_ttl{
@@ -1959,7 +1959,7 @@ footer .copyright{
 	display: inline-block;
 	font-size: 1.33rem;
 	letter-spacing: 0.2em;
-	color: var(--blue);
+	color: #0052AA;
 }
 .sp_lower h2.bk{
 	color: #111;
@@ -2210,7 +2210,6 @@ footer .copyright{
 .special_contents01_03 .box .item .whitebox{
 	background: #fff;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 2.5rem 1rem;
@@ -2222,6 +2221,13 @@ footer .copyright{
 .special_contents01_03 .box .item .whitebox.triangle::after{
 	right: -0.25rem;
 	border-color: transparent transparent #005899 transparent;
+}
+.special_contents01_03 .box .item .whitebox .txt{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .special_contents01_03 .box .item .whitebox h4{
 	font-size: 1.33rem;
@@ -2310,7 +2316,7 @@ footer .copyright{
 	font-size: 1.33rem;
 	font-weight: 700;
 	letter-spacing: 0.1em;
-	color: var(--blue);
+	color: #0052AA;
 	margin-bottom: 0;
 	text-align: center;
 }
@@ -2342,7 +2348,6 @@ footer .copyright{
 	height: 18.5rem;
 	background: #fff;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 2.25rem 1rem;
@@ -2397,8 +2402,7 @@ footer .copyright{
 	position: relative;
 	background: #fff;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 	padding: 2.5rem 2rem;
 }
@@ -2456,7 +2460,7 @@ footer .copyright{
 	font-size: 1.33rem;
 	font-weight: 600;
 	line-height: 1.8;
-	color: var(--blue);
+	color: #0052AA;
 	margin-bottom: 1rem;
 }
 .special_contents02_02 .box01 .item .img_wrap img{
@@ -2545,7 +2549,7 @@ footer .copyright{
 	letter-spacing: 0.15em;
 	line-height: 1.5;
 	margin: 1rem auto 0;
-	color: var(--blue);
+	color: #0052AA;
 }
 .special_contents02_02 .box02 .item{
 	padding: 0.25rem;
@@ -2582,7 +2586,7 @@ footer .copyright{
 	margin-right: 2rem;
 }
 .special_contents02_02 .box02 .item_in .txt01 h2{
-	color: var(--blue);
+	color: #0052AA;
 }
 .special_contents02_02 .box02 .item_in .img_wrap{
 	position: relative;
@@ -2627,7 +2631,7 @@ footer .copyright{
 	font-weight: 600;
 	letter-spacing: 0.1em;
 	line-height: 1.95;
-	color: var(--blue);
+	color: #0052AA;
 	margin-bottom: 1.5rem;
 }
 .special_contents02_03 .box .txt p{
@@ -2864,7 +2868,6 @@ footer .copyright{
 .special_contents03_03 .box01_in01 .item .whitebox{
 	background: #fff;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 1.5rem 2rem;
@@ -2875,6 +2878,7 @@ footer .copyright{
 	font-weight: 600;
 	letter-spacing: 0.2em;
 	margin-bottom: 1.5rem;
+	text-align: center;
 }
 .special_contents03_03 .box01_in01 .item h4::after{
 	position: absolute;
@@ -2906,7 +2910,7 @@ footer .copyright{
 .special_contents03_03 .box01_in02 h4 span{
 	display: block;
 	font-size: 1.26rem;
-	color: var(--blue);
+	color: #0052AA;
 	letter-spacing: 0;
 }
 .special_contents03_03 .box01_in02 p{
@@ -2961,7 +2965,7 @@ footer .copyright{
 	margin-top: 2rem;
 }
 .special_contents03_03 .box02_in01 .txt h4{
-	color: var(--blue);
+	color: #0052AA;
 	font-size: 1.33rem;
 	letter-spacing: 0.2em;
 	margin-bottom: 1.5rem;
@@ -2972,7 +2976,7 @@ footer .copyright{
 	line-height: 2.428;
 }
 .special_contents03_03 .box02_in01 .txt p span{
-	color: var(--blue);
+	color: #0052AA;
 }
 .special_contents03_03 .box02_in02{
 	margin-top: 1rem;
@@ -3022,7 +3026,7 @@ footer .copyright{
 	margin-top: 0.5rem;
 }
 .special_contents03_03 .box02_in02 .item p.blue{
-	color: var(--blue);
+	color: #0052AA;
 }
 
 .special_contents03_03 .box02_in03{
@@ -3053,7 +3057,7 @@ footer .copyright{
 .special_contents03_03 .box02_in03 .txt h4{
 	font-size: 1.26rem;
 	font-weight: 700;
-	color: var(--blue);
+	color: #0052AA;
 	text-align: center;
 	margin-bottom: 1rem;
 }
@@ -3077,7 +3081,6 @@ footer .copyright{
 .special_contents03_03 .box02_in03 .item .whitebox{
 	background: #fff;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 2.5rem 2rem;
@@ -3087,8 +3090,9 @@ footer .copyright{
 	font-size: 1.33rem;
 	font-weight: 700;
 	letter-spacing: 0.2em;
-	color: var(--blue);
+	color: #0052AA;
 	margin-bottom: 2rem;
+	text-align: center;
 }
 .special_contents03_03 .box02_in03 .item .inner h5::after{
 	position: absolute;
@@ -3134,7 +3138,7 @@ footer .copyright{
 	letter-spacing: 0.1em;
 	margin-bottom: 0.75rem;
 	text-align: center;
-	color: var(--blue);
+	color: #0052AA;
 }
 .special_contents03_03 .box03_in01 .item01 p{
 	font-size: 0.93rem;
