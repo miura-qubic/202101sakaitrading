@@ -2676,7 +2676,7 @@ footer .copyright{
 	line-height: 1;
 }
 .special_contents02_02 .box02 .item_in .txt01{
-	width: 18rem;
+	width: 19rem;
 	text-align: center;
 	margin-right: 7rem;
 }
@@ -2804,7 +2804,7 @@ footer .copyright{
 }
 .special_contents02_03 .box02{
 	position: relative;
-	background: url(../images/special_contents02/special_contents02_03_bg02.png) center top / cover no-repeat;
+	background: url(../images/special_contents02/special_contents02_03_bg02.png) center center / cover no-repeat;
 	padding: 6rem 3rem;
 }
 .special_contents02_03 .box02::before{
