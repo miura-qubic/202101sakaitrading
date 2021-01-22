@@ -3353,6 +3353,7 @@ footer .copyright{
 	border: solid 1px #111;
 	padding: 1.25rem 1rem;
 	width: 100%;
+	font-size: 16px;
 }
 .entry02 form .item .inner.birthday_wrap input[name="year"],
 .entry02 form .item .inner.gradyear_wrap input[name="grdyear"]{
