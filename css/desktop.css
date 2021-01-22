@@ -3270,6 +3270,294 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents03_03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ entry01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.entry01::after{
+	background: url(../images/entry/mv.png) center center / 1920px auto no-repeat;
+}
+.entry01 h1{
+	display: block;
+	width: 272.3px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ entry01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ entry02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.entry02{
+	padding: 6rem 0 10rem;
+	color: #111;
+}
+.entry02 .box{
+	width: 800px;
+	margin: 0 auto;
+}
+.entry02 .box .copy{
+	text-align: center;
+}
+.entry02 .box .copy p{
+	line-height: 3.125;
+}
+.entry02 form{
+	position: relative;
+	margin-top: 6rem;
+	padding-top: 8rem;
+}
+.entry02 form::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(90deg, #03A8E5, #012869);
+}
+
+.entry02 form .item{
+	display: flex;
+	align-items: center;
+	margin-top: 1.5rem;
+	font-weight: 600;
+}
+.entry02 form .item:first-of-type{
+	margin-top: 0;
+}
+.entry02 form .item .inner:nth-of-type(1){
+	width: 30%;
+}
+.entry02 form .item .inner:nth-of-type(2){
+	width: 70%;
+}
+.entry02 form .item.university_wrap{
+	display: flex;
+	align-items: flex-start;
+}
+.entry02 form .item.university_wrap .inner:first-of-type{
+	padding: 0.75rem 0;
+}
+.entry02 form .item .inner label span,
+.entry02 form .privacypolicy .inner label span{
+	color: #B90000;
+}
+.entry02 form .item .inner.radio_wrap,
+.entry02 form .item .inner.birthday_wrap,
+.entry02 form .item .inner.tel_wrap,
+.entry02 form .item .inner .university,
+.entry02 form .item .inner .gradyear_wrap,
+.entry02 form .item .inner .zip_wrap{
+	display: flex;
+	align-items: center;
+}
+
+.entry02 form .item .inner input[type="text"],
+.entry02 form .item .inner input[type="tel"],
+.entry02 form .item .inner input[type="email"]{
+	border: solid 1px #111;
+	padding: 1.25rem 1rem;
+	width: 100%;
+}
+.entry02 form .item .inner.birthday_wrap input[name="year"],
+.entry02 form .item .inner.gradyear_wrap input[name="grdyear"]{
+	width: 8rem;
+	text-align: center;
+	margin: 0 0.5rem;
+}
+.entry02 form .item .inner.birthday_wrap input[name="month"],
+.entry02 form .item .inner.birthday_wrap input[name="day"],
+.entry02 form .item .inner.gradyear_wrap input[name="grdmonth"]{
+	width: 3rem;
+	text-align: center;
+	margin: 0 0.5rem;
+}
+.entry02 form .item .inner.tel_wrap input{
+	width: 5rem;
+	text-align: center;
+}
+.entry02 form .item .inner.tel_wrap span{
+	margin: 0 0.5rem;
+}
+.entry02 form .item .inner .university{
+	margin-top: 1rem;
+}
+.entry02 form .item .inner .university:first-of-type{
+	margin-top: 0;
+}
+.entry02 form .item .inner .university label{
+	white-space: nowrap;
+	margin-right: 1rem;
+}
+.entry02 form .item .inner .zip_wrap{
+	margin-bottom: 1rem;
+}
+.entry02 form .item .inner .zip_wrap input{
+	margin: 0 0.5rem;
+	text-align: center;
+}
+.entry02 form .item .inner .zip_wrap input#zip1{
+	width: 5rem;
+}
+.entry02 form .item .inner .zip_wrap input#zip2{
+	width: 8rem;
+}
+
+.entry02 form .item .inner .radio{
+	display: flex;
+	align-items: center;
+}
+.entry02 form .item .inner .radio_input{
+	display: none;
+}
+.entry02 form .item .inner .radio_input + label{
+  padding-left: 1.25rem;
+  position:relative;
+  margin-right: 1.5rem;
+}
+.entry02 form .item .inner .radio_input + label::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border: 1px solid #111;
+}
+.entry02 form .item .inner .radio_input:checked + label::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+	left: 3px;
+	transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  background: #0052AA;
+}
+
+.entry02 form .privacypolicy{
+	margin-top: 4.5rem;
+}
+.entry02 form .privacypolicy .inner{
+	margin-bottom: 0.5rem;
+}
+.entry02 form .privacypolicy .inner label{
+	font-weight: 600;
+}
+.entry02 form .privacypolicy_in{
+	overflow-y: scroll;
+	height: 8.5rem;
+	border: solid 1px #111;
+	padding: 0.75rem 1.5rem;
+	background: #fff;
+	margin-bottom: 1rem;
+}
+.entry02 form .privacypolicy_in h2{
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+.entry02 form .privacypolicy_in p{
+	font-weight: 500;
+}
+.entry02 form .privacypolicy_in ol{
+	margin: 1rem 0 0 1rem;
+}
+.entry02 form .privacypolicy_in ol li{
+	list-style: decimal;
+	font-weight: 500;
+}
+.entry02 form .privacypolicy_in ol li + li{
+	margin-top: 1rem;
+}
+
+.entry02 form .privacypolicy .check_input{
+  display: none;
+}
+.entry02 form .privacypolicy .check_parts{
+  padding-left: 1.25rem;
+  position:relative;
+  margin-right: 1.5rem;
+}
+.entry02 form .privacypolicy .check_parts::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border: 1px solid #111;
+}
+.entry02 form .privacypolicy .check_input:checked + .check_parts::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+	left: 5px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #0052AA;
+  border-right: 3px solid #0052AA;
+}
+
+.entry02 form .submit{
+	margin-top: 6rem;
+	position: relative;
+	text-align: center;
+	z-index: 9;
+}
+.entry02 form .submit button{
+	position: relative;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #fff;
+	background: linear-gradient(90deg, #03A8E5, #012869);
+	width: 18rem;
+	padding: 1.5rem 1rem;
+	box-shadow: 0 0 20px rgba(0,25,52,.4);
+	transition: .3s ease-in;
+	cursor: pointer;
+	border: none;
+	appearance: none;
+	outline: none;
+}
+.entry02 form .submit button:hover{
+	color: #0052AA;
+}
+.entry02 form .submit button::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #fff;
+	transition: .3s ease-in;
+}
+.entry02 form .submit button::after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 100%;
+	width: 81px;
+	height: 1px;
+	background: #fff;
+	transform: translateY(-50%) translateX(-40.5px);
+	transition: .3s ease-in .1s;
+}
+.entry02 form .submit button:hover::before{
+	width: 100%;
+}
+.entry02 form .submit button:hover::after{
+	background: #0052AA;
+	transform: translateY(-50%) translateX(-40.5px) translateX(1rem);
+}
+.entry02 form .submit span{
+	position: relative;
+	z-index: 2;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ entry02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
