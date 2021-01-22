@@ -3294,6 +3294,7 @@ footer .copyright{
 }
 .entry02 .box .copy p{
 	line-height: 3.125;
+	font-weight: 500;
 }
 .entry02 form{
 	position: relative;
@@ -3473,8 +3474,9 @@ footer .copyright{
 }
 .entry02 form .privacypolicy .check_parts{
   padding-left: 1.25rem;
-  position:relative;
-  margin-right: 1.5rem;
+  position: relative;
+	margin-right: 1.5rem;
+	font-weight: 600;
 }
 .entry02 form .privacypolicy .check_parts::before{
   content: '';
@@ -3514,15 +3516,11 @@ footer .copyright{
 	background: linear-gradient(90deg, #03A8E5, #012869);
 	width: 18rem;
 	padding: 1.5rem 1rem;
-	box-shadow: 0 0 20px rgba(0,25,52,.4);
 	transition: .3s ease-in;
 	cursor: pointer;
 	border: none;
 	appearance: none;
 	outline: none;
-}
-.entry02 form .submit button:hover{
-	color: #0052AA;
 }
 .entry02 form .submit button::before{
 	position: absolute;
@@ -3531,7 +3529,7 @@ footer .copyright{
 	left: 0;
 	width: 0;
 	height: 100%;
-	background: #fff;
+	background: #0390CE;
 	transition: .3s ease-in;
 }
 .entry02 form .submit button::after{
@@ -3539,18 +3537,17 @@ footer .copyright{
 	content: '';
 	top: 50%;
 	left: 100%;
-	width: 81px;
+	width: 135px;
 	height: 1px;
 	background: #fff;
-	transform: translateY(-50%) translateX(-40.5px);
+	transform: translateY(-50%) translateX(-67.5px);
 	transition: .3s ease-in .1s;
 }
 .entry02 form .submit button:hover::before{
 	width: 100%;
 }
 .entry02 form .submit button:hover::after{
-	background: #0052AA;
-	transform: translateY(-50%) translateX(-40.5px) translateX(1rem);
+	transform: translateY(-50%) translateX(-67.5px) translateX(1rem);
 }
 .entry02 form .submit span{
 	position: relative;
