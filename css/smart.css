@@ -3599,46 +3599,5 @@ footer .copyright{
 
 
 
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-.privacypolicy01 .box{
-	margin: 0 auto;
-}
-.privacypolicy01 .box h1{
-	font-size: 1.5rem;
-	text-align: center;
-	margin: 0 0 2rem;
-}
-.privacypolicy01 .box h2{
-	font-size: 1.1rem;
-	margin: 2.5rem 0 1rem;
-}
-.privacypolicy01 .box ol{
-	margin: 1rem 0 1rem 1rem;
-}
-.privacypolicy01 .box ol li{
-	list-style: decimal;
-	margin: 0.5rem 0;
-}
-.privacypolicy01 .box ul{
-	margin: 1rem 0 1rem 1rem;
-}
-.privacypolicy01 .box ul li{
-	list-style: disc;
-}
-.privacypolicy01 .box ul li ol{
-	margin: 0rem 0 1.5rem 1rem;
-}
-.privacypolicy01 .box ul li ol li{
-	list-style: decimal;
-}
-.privacypolicy01 .box p{
-	margin: 0.5rem 0;
-}
-.privacypolicy01 .box .right{
-	text-align: right;
-}
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ プライバシーポリシー01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
 @media screen and (orientation:portrait) {/* 縦向き */}
 @media screen and (orientation:landscape) {/* 横向き */}
