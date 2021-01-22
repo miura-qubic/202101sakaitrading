@@ -10,7 +10,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="堺商事採用サイト">
-	<title>お問い合わせありがとうございました。 | 堺商事採用サイト</title>
+	<title>エントリー確認画面 | 堺商事採用サイト</title>
 
 	<!-- ファビコン -->
 	<link rel="shortcut icon" href="./images/common/favicon.png" />
@@ -78,94 +78,107 @@
 		</header>
 		<main>
 
-			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ thanks01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
-			<section class="thanks01 lower_mv">
+			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ entry01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+			<section class="entry01 lower_mv">
 				<div class="lower_mv_in">
 					<div class="lower_ttl txt_anime">
 							<div class="container">
-							<p class="txt01 anime01"><span>お問い合わせありがとうございました。</span></p>
-							<h1 class="anime02"><img src="./images/thanks/mv_ttl.svg" alt="THANK YOU"></h1>
+							<p class="txt01 anime01"><span>エントリー</span></p>
+							<h1 class="anime02"><img src="./images/entry/mv_ttl.svg" alt="ENTRY"></h1>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ thanks01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
+			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ entry01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
 			
-			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ thanks02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
-			<section class="thanks02 confirm bg_frame">
+			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ entry02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
+			<section class="entry02 confirm bg_frame">
 				<div class="container">
 					<div class="box">
 						<div class="copy fadein fadein01">
-							<p>確認メールをお送りいたしましたので、<br class="is_sp">ご確認ください。</p>
+							<p>下記の内容で送信します。</p>
 						</div>
 
-						<div class="item fadein fadein02">
-							<div class="copy">
-								<p class="blue">まだ見ていないコンテンツがあれば、<br class="is_sp">ぜひ覗いてみてください！</p>
+
+						<form action="mail.php" method="post">
+							<div class="item">
+								<div class="inner"><label for="name">お名前<span>【必須】</span></label></div>
+								<div class="inner"><input name="name" type="text" id="name" required></div>
+							</div>
+							<div class="item">
+								<div class="inner"><label for="name">ふりがな<span>【必須】</span></label></div>
+								<div class="inner"><input name="kana" type="text" id="kana" required></div>
+							</div>
+							<div class="item">
+								<div class="inner"><label for="sex">性別<span>【必須】</span></label></div>
+								<div class="inner radio_wrap">
+									<div class="radio">
+										<input name="sex" type="radio" id="men" class="radio_input" value="男性" checked><label for="men">男性</label>
+									</div>
+									<div class="radio">
+										<input name="sex" type="radio" id="woman" class="radio_input" value="女性"><label for="woman">女性</label>
+									</div>
+									<div class="radio">
+										<input name="sex" type="radio" id="unanswered" class="radio_input" value="回答しない"><label for="unanswered">回答しない</label>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="inner"><label for="birthday">生年月日<span>【必須】</span></label></div>
+								<div class="inner birthday_wrap">
+									西暦<input name="year" type="text" maxlength="4">年<input name="month" type="text" maxlength="2">月<input name="day" type="text" maxlength="2">日
+								</div>
+							</div>
+							<div class="item">
+								<div class="inner"><label for="zip">ご住所<span>【必須】</span></label></div>
+								<div class="inner">
+									<div class="zip_wrap">
+										〒<input name="zip1" type="text" id="zip1" maxlength="3" onKeyUp="$('#zip1').zip2addr({zip2:'#zip2',addr:'#addr1'});" required>
+										-<input name="zip2" type="text" id="zip2" maxlength="4" onKeyUp="$('#zip1').zip2addr({zip2:'#zip2',addr:'#addr1'});" required>
+									</div>
+									<input name="addr1" type="text" id="addr1" maxlength="4" onKeyUp="$('#zip1').zip2addr({zip2:'#zip2',addr:'#addr1'});" required>
+								</div>
+							</div>
+							<div class="item">
+								<div class="inner"><label for="tel01">電話番号<span>【必須】</span></label></div>
+								<div class="inner tel_wrap">
+									<input name="tel01" type="tel" id="tel01"><span>-</span><input name="tel02" type="tel" id="tel02"><span>-</span><input name="tel03" type="tel" id="tel03">
+								</div>
+							</div>
+							<div class="item">
+								<div class="inner"><label for="mail">メールアドレス<span>【必須】</span></label></div>
+								<div class="inner"><input name="mail" type="email" id="mail" required>
+								</div>
+							</div>
+							<div class="item university_wrap">
+								<div class="inner"><label>大学・学部・学科<span>【必須】</span></label></div>
+								<div class="inner">
+									<div class="university">
+										<label for="university">大学</label><input name="university" type="text" id="university">
+									</div>
+									<div class="university">
+										<label for="undergraduate">学部</label><input name="undergraduate" type="text" id="undergraduate">
+									</div>
+									<div class="university">
+										<label for="department">学科</label><input name="department" type="text" id="department">
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="inner"><label for="birthday">卒業（予定）年・月<span>【必須】</span></label></div>
+								<div class="inner gradyear_wrap">
+									西暦<input name="grdyear" type="text" maxlength="4">年<input name="grdmonth" type="text" maxlength="2">月
+								</div>
+							</div>
+							<div class="item">
+								<div class="inner"><label for="trigger">堺商事を知ったきっかけ</label></div>
+								<div class="inner"><input name="trigger" type="text" id="trigger"></div>
 							</div>
 
-							<div class="item_in">
-								<article>
-									<a href="./special_contents.html">
-										<div class="bg">
-											<div class="img">
-												<img src="./images/thanks/thanks02_img01.png">
-											</div>
-										</div>
-										<div class="txt">
-											<div class="txt_in">
-												<h2>堺商事と<br>学ぶ</h2>
-											</div>
-										</div>
-									</a>
-								</article>
-
-								<article>
-									<a href="./interview.html">
-										<div class="bg">
-											<div class="img">
-												<img src="./images/thanks/thanks02_img02.png">
-											</div>
-										</div>
-										<div class="txt">
-											<div class="txt_in">
-												<h2>先輩社員に<br>聞く</h2>
-											</div>
-										</div>
-									</a>
-								</article>
-		
-								<article>
-									<a href="./data.html">
-										<div class="bg">
-											<div class="img">
-												<img src="./images/thanks/thanks02_img03.png">
-											</div>
-										</div>
-										<div class="txt">
-											<div class="txt_in">
-												<h2>数字で<br>見る</h2>
-											</div>
-										</div>
-									</a>
-								</article>
-		
-								<article>
-									<a href="./lineup.html">
-										<div class="bg">
-											<div class="img">
-												<img src="./images/thanks/thanks02_img04.png">
-											</div>
-										</div>
-										<div class="txt">
-											<div class="txt_in">
-												<h2>取扱商品を<br>知る</h2>
-											</div>
-										</div>
-									</a>
-								</article>
+							<div class="submit">
+								<button type="submit"><span>送信</span></button>
 							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</section>

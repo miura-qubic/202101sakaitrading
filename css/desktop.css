@@ -3364,7 +3364,7 @@ footer .copyright{
 .entry02 form .item .inner.birthday_wrap input[name="month"],
 .entry02 form .item .inner.birthday_wrap input[name="day"],
 .entry02 form .item .inner.gradyear_wrap input[name="grdmonth"]{
-	width: 3rem;
+	width: 4rem;
 	text-align: center;
 	margin: 0 0.5rem;
 }
@@ -3556,6 +3556,138 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ entry02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ confirm ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.confirm{
+	padding: 4rem 0 10rem;
+}
+.entry02 form{
+	position: relative;
+	margin-top: 2rem;
+	padding-top: 3rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ confirm ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ thanks01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.thanks01::after{
+	background: url(../images/entry/mv.png) center center / 1920px auto no-repeat;
+}
+.thanks01 h1{
+	display: block;
+	width: 491.9px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ thanks01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ thanks02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.thanks02 .box{
+	width: 800px;
+	margin: 0 auto;
+}
+.thanks02 .box .copy{
+	text-align: center;
+}
+.thanks02 .box .copy p{
+	line-height: 3.125;
+	font-weight: 500;
+}
+.thanks02 .box .copy p.blue{
+	color: #0052AA;
+}
+.thanks02 .item{
+	position: relative;
+	margin-top: 2rem;
+	padding-top: 3rem;
+}
+.thanks02 .item::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(90deg, #03A8E5, #012869);
+}
+
+.thanks02 .item_in{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 3rem;
+}
+.thanks02 .item_in article{
+	width: 20%;
+}
+.thanks02 .item_in article a{
+	position: relative;
+}
+.thanks02 .item_in article .bg{
+	position: relative;
+}
+.thanks02 .item_in article .bg::before{
+	position: absolute;
+	content: '';
+	top: -0.25rem;
+	left: -0.5rem;
+	width: 109%;
+	height: 109%;
+	background: url(../images/thanks/hexagon_shadow.png) center center / contain no-repeat;
+	z-index: -1;
+	pointer-events: none;
+}
+.thanks02 .item_in article .bg::after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: -0.12rem;
+	width: 100%;
+	height: 100%;
+	background: url(../images/thanks/hexagon.png) center center / contain no-repeat;
+	transition: .3s ease-out;
+	z-index: 3;
+}
+.thanks02 .item_in article a:hover .bg::after{
+	opacity: .5;
+}
+.thanks02 .item_in article .bg .img{
+	position: relative;
+	z-index: 2;
+}
+.thanks02 .item_in article .txt{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	z-index: 5;
+}
+.thanks02 .item_in article .txt .txt_in{
+	position: relative;
+}
+.thanks02 .item_in article .txt .txt_in::after{
+	position: absolute;
+	content: '';
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0.7rem 1.2rem 0 1.2rem;
+	border-color: #fff transparent transparent transparent;
+}
+.thanks02 .item_in article .txt h2{
+	font-size: 1.125rem;
+	letter-spacing: 0.2rem;
+	line-height: 1.666;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 181.7px;
+	text-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ thanks02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {

@@ -3453,6 +3453,152 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ entry02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ confirm ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.confirm{
+	padding: 2.5rem 0 6rem;
+}
+.entry02 form{
+	position: relative;
+	margin-top: 1.5rem;
+	padding-top: 2rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ confirm ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ thanks01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.thanks01::after{
+	background: url(../images/entry/mv_sp.png) center center / cover no-repeat;
+}
+.thanks01 h1{
+	display: block;
+	width: 190px;
+}
+.thanks01.lower_mv .lower_ttl .txt01{
+	font-size: 1rem;
+	letter-spacing: 0.1em;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ thanks01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ thanks02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.thanks02{
+	padding: 3rem 0 6rem;
+	color: #111;
+}
+.thanks02 .box .copy p{
+	font-size: 0.93rem;
+	font-weight: 500;
+	line-height: 2.428;
+}
+.thanks02 .box .copy p.blue{
+	color: #0052AA;
+}
+.thanks02 .box .item{
+	position: relative;
+	margin-top: 1.5rem;
+	padding-top: 2rem;
+}
+.thanks02 .item::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(90deg, #03A8E5, #012869);
+}
+
+.thanks02 .item_in{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 2rem auto 0;
+	max-width: 300px;
+	width: 100%;
+}
+.thanks02 .item_in article{
+	width: 14rem;
+}
+.thanks02 .item_in article:nth-of-type(odd){
+	margin-right: auto;
+}
+.thanks02 .item_in article:nth-of-type(even){
+	margin-left: auto;
+}
+.thanks02 .item_in article a{
+	position: relative;
+}
+.thanks02 .item_in article .bg{
+	position: relative;
+}
+.thanks02 .item_in article .bg::before{
+	position: absolute;
+	content: '';
+	top: -0.25rem;
+	left: -0.6rem;
+	width: 109%;
+	height: 109%;
+	background: url(../images/thanks/hexagon_shadow.png) center center / contain no-repeat;
+	z-index: -1;
+	pointer-events: none;
+}
+.thanks02 .item_in article .bg::after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/thanks/hexagon.png) center center / contain no-repeat;
+	z-index: 3;
+}
+.thanks02 .item_in article .bg .img{
+	position: relative;
+	z-index: 2;
+}
+.thanks02 .item_in article .bg .img img{
+	width: 100%;
+	height: auto;
+}
+.thanks02 .item_in article .txt{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	color: #fff;
+	z-index: 5;
+}
+.thanks02 .item_in article .txt .txt_in{
+	position: relative;
+}
+.thanks02 .item_in article .txt .txt_in::after{
+	position: absolute;
+	content: '';
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0.7rem 1.2rem 0 1.2rem;
+	border-color: #fff transparent transparent transparent;
+}
+.thanks02 .item_in article .txt h2{
+	font-size: 1.2rem;
+	letter-spacing: 0.1em;
+	line-height: 1.6;
+	height: 178px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ thanks02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+
+
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{
