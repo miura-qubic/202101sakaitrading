@@ -3560,10 +3560,14 @@ footer .copyright{
 .confirm{
 	padding: 4rem 0 10rem;
 }
-.entry02 form{
+.confirm form{
 	position: relative;
 	margin-top: 2rem;
 	padding-top: 3rem;
+}
+.confirm form .item{
+	align-items: flex-start;
+	margin-top: 2rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ confirm ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 

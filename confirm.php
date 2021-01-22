@@ -10,7 +10,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="堺商事採用サイト">
-	<title>エントリー | 堺商事採用サイト</title>
+	<title>エントリー確認画面 | 堺商事採用サイト</title>
 
 	<!-- ファビコン -->
 	<link rel="shortcut icon" href="./images/common/favicon.png" />
@@ -92,113 +92,102 @@
 			<!-- ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ entry01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ -->
 			
 			<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ entry02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
-			<section class="entry02 bg_frame">
+			<section class="entry02 confirm bg_frame">
 				<div class="container">
 					<div class="box">
 						<div class="copy fadein fadein01">
-							<p>
-								堺商事へのエントリーをご希望の方は、<br>
-								下記の申込みフォームに必要事項をご記入の上、「送信内容を確認」ボタンを押してください。<br>
-								皆様のご応募お待ちしております。
-							</p>
+							<p>下記の内容で送信します。</p>
 						</div>
 
+<?php
+	$name = htmlspecialchars($_POST['name'], ENT_QUOTES, "utf-8");
+	$kana = htmlspecialchars($_POST['kana'], ENT_QUOTES, "utf-8");
+	$sex = htmlspecialchars($_POST['sex'], ENT_QUOTES, "utf-8");
+	$year = htmlspecialchars($_POST['year'], ENT_QUOTES, "utf-8");
+	$month = htmlspecialchars($_POST['month'], ENT_QUOTES, "utf-8");
+	$day = htmlspecialchars($_POST['day'], ENT_QUOTES, "utf-8");
+	$zip1 = htmlspecialchars($_POST['zip1'], ENT_QUOTES, "utf-8");
+	$zip2 = htmlspecialchars($_POST['zip2'], ENT_QUOTES, "utf-8");
+	$addr1 = htmlspecialchars($_POST['addr1'], ENT_QUOTES, "utf-8");
+	$tel01 = htmlspecialchars($_POST['tel01'], ENT_QUOTES, "utf-8");
+	$tel02 = htmlspecialchars($_POST['tel02'], ENT_QUOTES, "utf-8");
+	$tel03 = htmlspecialchars($_POST['tel03'], ENT_QUOTES, "utf-8");
+	$email = htmlspecialchars($_POST['mail'], ENT_QUOTES, "utf-8");
+	$university = htmlspecialchars($_POST['university'], ENT_QUOTES, "utf-8");
+	$undergraduate = htmlspecialchars($_POST['undergraduate'], ENT_QUOTES, "utf-8");
+	$department = htmlspecialchars($_POST['department'], ENT_QUOTES, "utf-8");
+	$grdyear = htmlspecialchars($_POST['grdyear'], ENT_QUOTES, "utf-8");
+	$grdmonth = htmlspecialchars($_POST['grdmonth'], ENT_QUOTES, "utf-8");
+	$trigger = htmlspecialchars($_POST['trigger'], ENT_QUOTES, "utf-8");
+?>
 
-						<form action="./confirm.php" method="post">
+						<form action="mail.php" method="post">
 							<div class="item">
 								<div class="inner"><label for="name">お名前<span>【必須】</span></label></div>
-								<div class="inner"><input name="name" type="text" id="name" required></div>
+								<div class="inner"><?php echo $name; ?></div>
 							</div>
 							<div class="item">
 								<div class="inner"><label for="name">ふりがな<span>【必須】</span></label></div>
-								<div class="inner"><input name="kana" type="text" id="kana" required></div>
+								<div class="inner"><?php echo $kana; ?></div>
 							</div>
 							<div class="item">
 								<div class="inner"><label for="sex">性別<span>【必須】</span></label></div>
-								<div class="inner radio_wrap">
-									<div class="radio">
-										<input name="sex" type="radio" id="men" class="radio_input" value="男性" checked><label for="men">男性</label>
-									</div>
-									<div class="radio">
-										<input name="sex" type="radio" id="woman" class="radio_input" value="女性"><label for="woman">女性</label>
-									</div>
-									<div class="radio">
-										<input name="sex" type="radio" id="unanswered" class="radio_input" value="回答しない"><label for="unanswered">回答しない</label>
-									</div>
-								</div>
+								<div class="inner"><?php echo $sex; ?></div>
 							</div>
 							<div class="item">
 								<div class="inner"><label for="birthday">生年月日<span>【必須】</span></label></div>
-								<div class="inner birthday_wrap">
-									西暦<input name="year" type="text" maxlength="4">年<input name="month" type="text" maxlength="2">月<input name="day" type="text" maxlength="2">日
-								</div>
+								<div class="inner"><?php echo $year . '年' . $month . '月' . $day . '日'; ?></div>
 							</div>
 							<div class="item">
 								<div class="inner"><label for="zip">ご住所<span>【必須】</span></label></div>
 								<div class="inner">
-									<div class="zip_wrap">
-										〒<input name="zip1" type="text" id="zip1" maxlength="3" onKeyUp="$('#zip1').zip2addr({zip2:'#zip2',addr:'#addr1'});" required>
-										-<input name="zip2" type="text" id="zip2" maxlength="4" onKeyUp="$('#zip1').zip2addr({zip2:'#zip2',addr:'#addr1'});" required>
-									</div>
-									<input name="addr1" type="text" id="addr1" maxlength="4" onKeyUp="$('#zip1').zip2addr({zip2:'#zip2',addr:'#addr1'});" required>
+									<?php echo '〒' . $zip1 . '-' . $zip2; ?><br>
+									<?php echo $addr1; ?>
 								</div>
 							</div>
 							<div class="item">
 								<div class="inner"><label for="tel01">電話番号<span>【必須】</span></label></div>
-								<div class="inner tel_wrap">
-									<input name="tel01" type="tel" id="tel01"><span>-</span><input name="tel02" type="tel" id="tel02"><span>-</span><input name="tel03" type="tel" id="tel03">
-								</div>
+								<div class="inner"><?php echo $tel01 . '-' . $tel02 . '-' . $tel03; ?></div>
 							</div>
 							<div class="item">
 								<div class="inner"><label for="mail">メールアドレス<span>【必須】</span></label></div>
-								<div class="inner"><input name="mail" type="email" id="mail" required>
-								</div>
+								<div class="inner"><?php echo $email; ?></div>
 							</div>
-							<div class="item university_wrap">
+							<div class="item">
 								<div class="inner"><label>大学・学部・学科<span>【必須】</span></label></div>
-								<div class="inner">
-									<div class="university">
-										<label for="university">大学</label><input name="university" type="text" id="university">
-									</div>
-									<div class="university">
-										<label for="undergraduate">学部</label><input name="undergraduate" type="text" id="undergraduate">
-									</div>
-									<div class="university">
-										<label for="department">学科</label><input name="department" type="text" id="department">
-									</div>
-								</div>
+								<div class="inner"><?php echo $university . '　' . $undergraduate . '　' . $department; ?></div>
 							</div>
 							<div class="item">
 								<div class="inner"><label for="birthday">卒業（予定）年・月<span>【必須】</span></label></div>
-								<div class="inner gradyear_wrap">
-									西暦<input name="grdyear" type="text" maxlength="4">年<input name="grdmonth" type="text" maxlength="2">月
-								</div>
+								<div class="inner"><?php echo $grdyear . '年 ' . $grdmonth . '月'; ?></div>
 							</div>
 							<div class="item">
 								<div class="inner"><label for="trigger">堺商事を知ったきっかけ</label></div>
-								<div class="inner"><input name="trigger" type="text" id="trigger"></div>
+								<div class="inner"><?php echo $trigger; ?></div>
 							</div>
 
-							<div class="privacypolicy">
-								<div class="inner"><label>プライバシーポリシーをご確認の上、確認画面へお進みください。<span>【必須】</span></label></div>
-								<div class="privacypolicy_in">
-									<h2>プライバシーポリシー</h2>
-									<p>堺商事株式会社（以下、当社と称します）は、当社の事業及びサービスを実施する上で、個人情報を適正に管理、保護することが当社の社会的責務であるとの認識に立ち、個人情報保護に関する法令の遵守のもと、個人情報を安全に取り扱います。</p>
-									<ol>
-										<li>当社はお客様からお預かりした個人情報の紛失、流出、改ざん、漏洩、外部からの不正なアクセスなどを防止するため、適切な安全措置を講じます。</li>
-										<li>お客様から個人情報をいただく場合は、お客様に対する当社の業務および会社に関する情報の提供、または改善する目的に限り利用するものとします。またそれ以外の目的で利用する場合は、個人情報をいただく際に、事前にその旨を明示いたします。</li>
-										<li>当社は、お客様の個人情報の取り扱いを第三者に委託する場合は、当社と同等の情報管理を有する委託先を選定し、適切な管理・監督を行います。</li>
-										<li>当社は、保有する個人情報について、お客様本人から内容の確認、修正、削除を求められた場合には、適切に対応します。</li>
-										<li>当社は、個人情報の保護に関する法令等を遵守するとともに、コンプライアンスを遵守し、社内での個人情報の取り扱いについて周知・徹底させ、社内体制の整備・改善を実施します。</li>
-									</ol>
-								</div>
-								<label>
-									<input type="checkbox" name="privacy" class="check_input" id="privacy" required>
-									<span class="check_parts">上記内容に同意します。<br class="is_sp"><span>よろしければチェックを入れて送信してください。</span></span>
-								</label>
-							</div>
 							<div class="submit">
-								<button type="submit"><span>送信内容を確認</span></button>
+								<button type="submit"><span>送信</span></button>
+
+								<input type="hidden" name="name" value="<?php echo $name; ?>">
+								<input type="hidden" name="kana" value="<?php echo $kana; ?>">
+								<input type="hidden" name="sex" value="<?php echo $sex; ?>">
+								<input type="hidden" name="year" value="<?php echo $year; ?>">
+								<input type="hidden" name="month" value="<?php echo $month; ?>">
+								<input type="hidden" name="day" value="<?php echo $day; ?>">
+								<input type="hidden" name="zip1" value="<?php echo $zip1; ?>">
+								<input type="hidden" name="zip2" value="<?php echo $zip2; ?>">
+								<input type="hidden" name="addr1" value="<?php echo $addr1; ?>">
+								<input type="hidden" name="tel01" value="<?php echo $tel01; ?>">
+								<input type="hidden" name="tel02" value="<?php echo $tel02; ?>">
+								<input type="hidden" name="tel03" value="<?php echo $tel03; ?>">
+								<input type="hidden" name="mail" value="<?php echo $email; ?>">
+								<input type="hidden" name="university" value="<?php echo $university; ?>">
+								<input type="hidden" name="undergraduate" value="<?php echo $undergraduate; ?>">
+								<input type="hidden" name="department" value="<?php echo $department; ?>">
+								<input type="hidden" name="grdyear" value="<?php echo $grdyear; ?>">
+								<input type="hidden" name="grdmonth" value="<?php echo $grdmonth; ?>">
+								<input type="hidden" name="trigger" value="<?php echo $trigger; ?>">
 							</div>
 						</form>
 					</div>
