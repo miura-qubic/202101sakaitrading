@@ -42,7 +42,8 @@ section,
 	position: relative;
 }
 .l_container{
-	width: 1480px;
+	max-width: 1480px;
+	width: 100%;
 	padding: 0 50px;
 	margin: 0 auto;
 }
@@ -374,15 +375,21 @@ header{
 	min-width: 1280px;
 	width: 100%;
 	background: rgba(255,255,255,.9);
-	padding: 1.5rem 0 1.25rem 3.75rem;
+	padding: 1.5rem 0 1.25rem 2.5%;
 	z-index: 50000;
 }
 header .logo{
-	margin-right: 3.125rem;
+	/* margin-right: 3.125rem; */
+	margin-right: 2.5%;
 	line-height: 1;
 }
+header .logo{
+	max-width: 254px;
+	width: 19%;
+}
 header .logo img{
-	width: 254px;
+	width: 100%;
+	height: auto;
 }
 header .logo p{
 	font-size: 0.9375rem;
@@ -479,9 +486,10 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top01{
-	background: url(../images/top/mv.png) left top / 1920px auto no-repeat;
+	background: url(../images/top/mv.png) center top / 1920px auto no-repeat;
 	background-color: #fff;
 	padding: 0 0 19rem;
+	min-width: 1280px;
 }
 .top01 .mv{
 	position: relative;
@@ -491,8 +499,10 @@ footer .copyright{
 }
 .top01 .links{
 	position: absolute;
-	top: 3rem;
-	right: 6%;
+	top: 2rem;
+	right: 1.5%;
+	max-width: 187px;
+	width: 11%;
 	z-index: 50001;
 }
 .top01 .links a{
@@ -500,10 +510,10 @@ footer .copyright{
 }
 .top01 .links a p{
 	position: absolute;
-	top: 1.75rem;
+	top: 1.5vw;
 	left: 50%;
 	transform: translateX(-50%);
-	font-size: 1.125rem;
+	font-size: 1rem;
 	width: 100%;
 	text-align: center;
 	color: #fff;
@@ -1008,14 +1018,14 @@ footer .copyright{
 .recruit_wrap::before{
 	position: absolute;
 	content: '';
-	background: url(../images/common/recruit_bg.png) top left / 1920px auto no-repeat;
+	background: url(../images/common/recruit_bg.png) top center / 1920px auto no-repeat;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
 .recruit_wrap02::before{
-	background: url(../images/common/recruit02_bg.png) top left / 1920px auto no-repeat;
+	background: url(../images/common/recruit02_bg.png) top center / 1920px auto no-repeat;
 }
 .recruit_wrap .box{
 	height: 429.81px;
@@ -2328,7 +2338,9 @@ footer .copyright{
 	left: 100%;
 }
 .special_contents01_03 .box{
-	width: 1380px;
+	max-width: 1380px;
+	width: 100%;
+	padding: 0 50px;
 	margin: -6rem auto 3rem;
 	display: flex;
 	justify-content: space-between;
@@ -2361,7 +2373,7 @@ footer .copyright{
 	line-height: 1;
 	letter-spacing: 0.1em;
 	text-align: center;
-	padding: 0.5rem 3.5rem 1.75rem 4rem;
+	padding: 0.5rem 1rem 1.75rem 1.5rem;
 	background: url(../images/special_contents01/special_contents01_03_fig02.svg) left bottom / auto 2rem no-repeat;
 	margin-bottom: 0.5rem;
 	width: 100%;
@@ -3731,6 +3743,14 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
+	.interview .mv .txt02 .bluebox{
+		background: rgba(17,125,187,.6);
+	}
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ IE対策 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ Edge対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+@supports (-ms-ime-align: auto) {
 	.interview .mv .txt02 .bluebox{
 		background: rgba(17,125,187,.6);
 	}

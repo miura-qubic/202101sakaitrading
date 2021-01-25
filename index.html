@@ -55,7 +55,7 @@
 	<![endif]-->
 </head>
 
-<body class="preload">
+<body class="preload top">
 	<div id="wrapper">
 		<header>
 			<h1 class="logo"><a href="./" class="fade"><img src="./images/common/logo.svg" alt="堺商事株式会社 採用サイト"><p>RECRUITING SITE 2022</p></a></h1>
@@ -352,6 +352,31 @@
 	<script src="./js/ofi.min.js" defer></script>
 	<script src="./js/picturefill.min.js" defer></script>
 	<script type="text/javascript" src="./js/myscript.js" defer></script>
+	<script>
+		window.onload = function(){
+			var video_wrap = document.getElementById('video_wrap');
+			var video = document.getElementsByTagName('video')[0];
+			var play_btn = document.getElementById('play_btn');
+
+			video.addEventListener('ended', function() {
+				video.load();
+				video_wrap.classList.add('finished');
+				video.autoplay=false;
+				play_btn.classList.remove('active');
+			}, false);
+		};
+
+		var video = document.getElementById('video');
+		var btn_status = 0;
+
+		play_btn.addEventListener('click', function(){
+			video.play();
+			video.currentTime = 0;
+			video_wrap.classList.remove('finished');
+			btn_status = 1;
+			play_btn.classList.add('active');
+		});
+	</script>
 	<!-- JS読み込み -->
 
 </body>

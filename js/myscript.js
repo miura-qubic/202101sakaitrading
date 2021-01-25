@@ -110,23 +110,4 @@ $(function () {
 		return false;
 	}); 
 
-	var video = $('#video').get(0);
-	video.addEventListener('ended', function() {
-		video.load();
-		$("#video_wrap").addClass('finished');
-		video.autoplay=false;
-		$('#play_btn').removeClass('active');
-	}, false);
-
-	var video2 = $('#video');
-	var play_btn = $('#play_btn');
-	var btn_status = 0;
-
-	play_btn.on('click', function(){
-		video.play();
-		video2.currentTime = 0;
-		$('#video_wrap').removeClass('finished');
-		btn_status = 1;
-		$('#play_btn').addClass('active');
-	});
 });
