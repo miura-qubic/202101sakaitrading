@@ -239,9 +239,9 @@ section,
 	transition: opacity 0s .6s;
 	z-index: 1;
 }
-.txt_anime span{
+/* .txt_anime span{
 	transition: 1.3s cubic-bezier(.27,.98,.74,.02);
-}
+} */
 .txt_anime.start img,
 .txt_anime.start span{
 	opacity: 1;
