@@ -37,7 +37,6 @@ const tabletwidth = 1025;
 
 
 $(function () {
-	$("body").removeClass("preload");
 	// JQueryの範囲
 
 	// ハンバーガーメニューのアニメーション発動用クラス付与
@@ -110,4 +109,5 @@ $(function () {
 		return false;
 	}); 
 
+	$("body").removeClass("preload");
 });
