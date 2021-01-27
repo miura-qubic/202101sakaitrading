@@ -32,8 +32,8 @@ $msg = mb_convert_kana($message, "sKV");
 function funcManagerAddress($name, $kana, $sex, $year, $month, $day, $zip1, $zip2, $addr1, $tel01, $tel02, $tel03, $email, $university, $undergraduate, $department, $grdyear, $grdmonth, $trigger)
 {
 
-  $mailto = 'info@qu-bic.jp'; // 管理者当てメール、カンマで複数設定可能
-  // $mailto = 'info@sakaitrading.co.jp'; // 管理者当てメール、カンマで複数設定可能
+
+  $mailto = 'naiki-ogimi@bridge-japan.jp'; // 管理者当てメール、カンマで複数設定可能
   $subject = $name . "様。エントリーありがとうございます"; //件名
 
 
@@ -125,7 +125,7 @@ function funcContactAddress($name, $kana, $sex, $year, $month, $day, $zip1, $zip
   $content .= "--------------------------------------□■\n";
 
 
-  $mailfrom = "From:" . mb_encode_mimeheader("堺商事株式会社") . "<'info@qu-bic.jp'>";
+  $mailfrom = "From:" . mb_encode_mimeheader("堺商事株式会社") . "<'naiki-ogimi@bridge-japan.jp'>";
   // $mailfrom = "From:" . mb_encode_mimeheader("堺商事株式会社") . "<'info@sakaitrading.co.jp'>";
 
   if (mb_send_mail($mailto, $subject, $content, $mailfrom) == true) {
