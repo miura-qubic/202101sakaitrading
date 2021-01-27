@@ -67,7 +67,6 @@ function funcManagerAddress($name, $kana, $sex, $year, $month, $day, $zip1, $zip
   $content .= "■堺商事を知ったきっかけ\n";
   $content .= $trigger . "\n\n";
   $content .= "--------------------------------\n\n";
-  $content .= "cam505";
 
   $mailfrom = "From:" . mb_encode_mimeheader($name) . "<" . $email . ">";
   if (mb_send_mail($mailto, $subject, $content, $mailfrom) == true) {
