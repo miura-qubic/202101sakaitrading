@@ -2172,6 +2172,42 @@ footer .copyright{
 	bottom: -8rem;
 	right: 9rem;
 }
+@media screen and (min-width:768px) and ( max-width:1650px) {
+	.interview .mv_in{
+		height: 611.25px;
+		padding: 3.75rem 0 1.875rem;
+
+	}
+	.interview .mv .txt01 h2{
+		font-size: 1.875rem;
+	}
+	.interview .mv .txt01 h2 .anime01{
+		margin-bottom: 1.218rem;
+	}
+	.interview .mv .txt01 .emp_name{
+		margin-top: 1.875rem;
+	}
+	.interview .mv .txt01 .emp_name p{
+		font-size: 1.125rem;
+		margin-bottom: 0.75rem;
+	}
+	.interview .mv .txt01 .emp_name h3{
+		font-size: 1.4rem;
+	}
+	.interview .mv .txt02{
+		position: relative;
+		width: 24rem;
+		padding: 1.5rem 2.25rem;
+		margin-left: -2.25rem;
+	}
+	.interview .mv .txt02_in h4{
+		font-size: 0.9375rem;
+		margin-bottom: 0.9375rem;
+	}
+	.interview .mv .txt02_in p{
+		font-size: 0.75rem;
+	}
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ interview03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
