@@ -218,13 +218,13 @@ section,
 	background: #fff;
 }
 .txt_anime .anime02::before{
-	transition-delay: .3s;
+	transition-delay: .2s;
 }
 .txt_anime .anime03::before{
-	transition-delay: .6s;
+	transition-delay: .4s;
 }
 .txt_anime .anime04::before{
-	transition-delay: .9s;
+	transition-delay: .6s;
 }
 .txt_anime.start .anime01::before,
 .txt_anime.start .anime02::before,
@@ -248,15 +248,15 @@ section,
 }
 .txt_anime.start .anime02 img,
 .txt_anime.start .anime02 span{
-	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) 1.1s;
+	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) .575s;
 }
 .txt_anime.start .anime03 img,
 .txt_anime.start .anime03 span{
-	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) 1.4s;
+	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) .875s;
 }
 .txt_anime.start .anime04 img,
 .txt_anime.start .anime04 span{
-	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) 1.7s;
+	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) 1.175s;
 }
 
 .fadein{
