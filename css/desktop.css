@@ -1151,6 +1151,27 @@ footer .copyright{
 .lower_mv .txt_anime .anime03::before{
 	background: #fff;
 }
+@media screen and (min-width:768px) and ( max-width:1650px) {
+	.lower_mv_in{
+		height: 441px;
+	}
+	.lower_mv .lower_ttl .txt01{
+		font-size: 1.64rem;
+		margin-bottom: 1.875rem;
+	}
+	.lower_mv .lower_ttl .txt02{
+		font-size: 1.4rem;
+		margin-top: 1.875rem;
+	}
+	.lower_mv .lower_ttl02 .txt01{
+		font-size: 1.64rem;
+		margin-bottom: 1.875rem;
+	}
+	.lower_mv .lower_ttl02 h1{
+		font-size: 3.281rem;
+		margin-top: 4rem;
+	}
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ special_contents01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -1160,6 +1181,11 @@ footer .copyright{
 .special_contents01 h1{
 	display: block;
 	width: 844.08px;
+}
+@media screen and (min-width:768px) and ( max-width:1650px) {
+	.special_contents01 h1{
+		width: 633.06px;
+	}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ special_contents01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1282,6 +1308,11 @@ footer .copyright{
 	display: block;
 	width: 402.45px;
 }
+@media screen and (min-width:768px) and ( max-width:1650px) {
+	.jobinfo01 h1{
+		width: 301.83px;
+	}
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ jobinfo01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ jobinfo02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -1384,6 +1415,11 @@ footer .copyright{
 .lineup01 h1{
 	display: block;
 	width: 402.45px;
+}
+@media screen and (min-width:768px) and ( max-width:1650px) {
+	.lineup01 h1{
+		width: 301.83px;
+	}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ lineup01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1677,6 +1713,14 @@ footer .copyright{
 .data01.lower_mv .lower_ttl .txt02{
 	font-size: 1.1875rem;
 }
+@media screen and (min-width:768px) and ( max-width:1650px) {
+	.data01 h1{
+		width: 151.2px;
+	}
+	.data01.lower_mv .lower_ttl .txt02{
+		font-size: 0.89rem;
+	}
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -1841,6 +1885,11 @@ footer .copyright{
 .interview01 h1{
 	display: block;
 	width: 472.75px;
+}
+@media screen and (min-width:768px) and ( max-width:1650px) {
+	.interview01 h1{
+		width: 354.5px;
+	}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ interview01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -3344,6 +3393,11 @@ footer .copyright{
 	display: block;
 	width: 272.3px;
 }
+@media screen and (min-width:768px) and ( max-width:1650px) {
+	.entry01 h1{
+		width: 204.22px;
+	}
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ entry01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ entry02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -3644,6 +3698,11 @@ footer .copyright{
 .thanks01 h1{
 	display: block;
 	width: 491.9px;
+}
+@media screen and (min-width:768px) and ( max-width:1650px) {
+	.thanks01 h1{
+		width: 368.92px;
+	}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ thanks01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
