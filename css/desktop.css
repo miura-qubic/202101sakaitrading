@@ -1801,6 +1801,36 @@ footer .copyright{
 	width: 116%;
 	z-index: -1;
 }
+.data02 .fadein01,
+.data03 .fadein01,
+.data04 .fadein01{ transition: .8s; }
+.data02 .fadein02,
+.data03 .fadein02,
+.data04 .fadein02{ transition: .8s .025s; }
+.data02 .fadein03,
+.data03 .fadein03,
+.data04 .fadein03{ transition: .8s .05s; }
+.data02 .fadein04,
+.data03 .fadein04,
+.data04 .fadein04{ transition: .8s .075s; }
+.data02 .fadein05,
+.data03 .fadein05,
+.data04 .fadein05{ transition: .8s .1s; }
+.data02 .fadein06,
+.data03 .fadein06,
+.data04 .fadein06{ transition: .8s .125s; }
+.data02 .fadein07,
+.data03 .fadein07,
+.data04 .fadein07{ transition: .8s .15s; }
+.data02 .fadein08,
+.data03 .fadein08,
+.data04 .fadein08{ transition: .8s .175s; }
+.data02 .fadein09,
+.data03 .fadein09,
+.data04 .fadein09{ transition: .8s .2s; }
+.data02 .fadein10,
+.data03 .fadein10,
+.data04 .fadein10{ transition: .8s .225s; }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ data02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ data03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
